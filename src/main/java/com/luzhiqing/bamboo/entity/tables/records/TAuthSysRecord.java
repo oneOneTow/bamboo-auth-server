@@ -4,18 +4,16 @@
 package com.luzhiqing.bamboo.entity.tables.records;
 
 
-import com.luzhiqing.bamboo.entity.tables.TAuthSys;
-
-import java.time.LocalDateTime;
-
-import javax.annotation.Generated;
-
+import com.luzhiqing.bamboo.entity.tables.T_AUTH_SYS;
 import org.jooq.Field;
 import org.jooq.Record1;
 import org.jooq.Record14;
 import org.jooq.Row14;
 import org.jooq.impl.UpdatableRecordImpl;
 import org.jooq.types.UShort;
+
+import javax.annotation.Generated;
+import java.time.LocalDateTime;
 
 
 /**
@@ -31,7 +29,7 @@ import org.jooq.types.UShort;
 @SuppressWarnings({ "all", "unchecked", "rawtypes" })
 public class TAuthSysRecord extends UpdatableRecordImpl<TAuthSysRecord> implements Record14<UShort, String, String, String, LocalDateTime, Integer, String, LocalDateTime, Integer, String, LocalDateTime, Integer, String, Boolean> {
 
-    private static final long serialVersionUID = -1247352142;
+    private static final long serialVersionUID = 1047844194;
 
     /**
      * Setter for <code>bamboo_auth.t_auth_sys.id</code>. 自增id
@@ -266,7 +264,7 @@ public class TAuthSysRecord extends UpdatableRecordImpl<TAuthSysRecord> implemen
      */
     @Override
     public Field<UShort> field1() {
-        return TAuthSys.T_AUTH_SYS.ID;
+        return T_AUTH_SYS.T_AUTH_SYS.ID;
     }
 
     /**
@@ -274,7 +272,7 @@ public class TAuthSysRecord extends UpdatableRecordImpl<TAuthSysRecord> implemen
      */
     @Override
     public Field<String> field2() {
-        return TAuthSys.T_AUTH_SYS.SYS_NAME;
+        return T_AUTH_SYS.T_AUTH_SYS.SYS_NAME;
     }
 
     /**
@@ -282,7 +280,7 @@ public class TAuthSysRecord extends UpdatableRecordImpl<TAuthSysRecord> implemen
      */
     @Override
     public Field<String> field3() {
-        return TAuthSys.T_AUTH_SYS.SYS_DESC;
+        return T_AUTH_SYS.T_AUTH_SYS.SYS_DESC;
     }
 
     /**
@@ -290,7 +288,7 @@ public class TAuthSysRecord extends UpdatableRecordImpl<TAuthSysRecord> implemen
      */
     @Override
     public Field<String> field4() {
-        return TAuthSys.T_AUTH_SYS.SYS_DOMAIN;
+        return T_AUTH_SYS.T_AUTH_SYS.SYS_DOMAIN;
     }
 
     /**
@@ -298,7 +296,7 @@ public class TAuthSysRecord extends UpdatableRecordImpl<TAuthSysRecord> implemen
      */
     @Override
     public Field<LocalDateTime> field5() {
-        return TAuthSys.T_AUTH_SYS.CREATE_TIME;
+        return T_AUTH_SYS.T_AUTH_SYS.CREATE_TIME;
     }
 
     /**
@@ -306,7 +304,7 @@ public class TAuthSysRecord extends UpdatableRecordImpl<TAuthSysRecord> implemen
      */
     @Override
     public Field<Integer> field6() {
-        return TAuthSys.T_AUTH_SYS.CREATE_USER;
+        return T_AUTH_SYS.T_AUTH_SYS.CREATE_USER;
     }
 
     /**
@@ -314,7 +312,7 @@ public class TAuthSysRecord extends UpdatableRecordImpl<TAuthSysRecord> implemen
      */
     @Override
     public Field<String> field7() {
-        return TAuthSys.T_AUTH_SYS.CREATE_USER_NAME;
+        return T_AUTH_SYS.T_AUTH_SYS.CREATE_USER_NAME;
     }
 
     /**
@@ -322,7 +320,7 @@ public class TAuthSysRecord extends UpdatableRecordImpl<TAuthSysRecord> implemen
      */
     @Override
     public Field<LocalDateTime> field8() {
-        return TAuthSys.T_AUTH_SYS.UPDATE_TIME;
+        return T_AUTH_SYS.T_AUTH_SYS.UPDATE_TIME;
     }
 
     /**
@@ -330,7 +328,7 @@ public class TAuthSysRecord extends UpdatableRecordImpl<TAuthSysRecord> implemen
      */
     @Override
     public Field<Integer> field9() {
-        return TAuthSys.T_AUTH_SYS.UPDATE_USER;
+        return T_AUTH_SYS.T_AUTH_SYS.UPDATE_USER;
     }
 
     /**
@@ -338,7 +336,7 @@ public class TAuthSysRecord extends UpdatableRecordImpl<TAuthSysRecord> implemen
      */
     @Override
     public Field<String> field10() {
-        return TAuthSys.T_AUTH_SYS.UPDATE_USER_NAME;
+        return T_AUTH_SYS.T_AUTH_SYS.UPDATE_USER_NAME;
     }
 
     /**
@@ -346,7 +344,7 @@ public class TAuthSysRecord extends UpdatableRecordImpl<TAuthSysRecord> implemen
      */
     @Override
     public Field<LocalDateTime> field11() {
-        return TAuthSys.T_AUTH_SYS.DELETE_TIME;
+        return T_AUTH_SYS.T_AUTH_SYS.DELETE_TIME;
     }
 
     /**
@@ -354,7 +352,7 @@ public class TAuthSysRecord extends UpdatableRecordImpl<TAuthSysRecord> implemen
      */
     @Override
     public Field<Integer> field12() {
-        return TAuthSys.T_AUTH_SYS.DELETE_USER;
+        return T_AUTH_SYS.T_AUTH_SYS.DELETE_USER;
     }
 
     /**
@@ -362,7 +360,7 @@ public class TAuthSysRecord extends UpdatableRecordImpl<TAuthSysRecord> implemen
      */
     @Override
     public Field<String> field13() {
-        return TAuthSys.T_AUTH_SYS.DELETE_USER_NAME;
+        return T_AUTH_SYS.T_AUTH_SYS.DELETE_USER_NAME;
     }
 
     /**
@@ -370,7 +368,7 @@ public class TAuthSysRecord extends UpdatableRecordImpl<TAuthSysRecord> implemen
      */
     @Override
     public Field<Boolean> field14() {
-        return TAuthSys.T_AUTH_SYS.ENABLED;
+        return T_AUTH_SYS.T_AUTH_SYS.ENABLED;
     }
 
     /**
@@ -753,14 +751,14 @@ public class TAuthSysRecord extends UpdatableRecordImpl<TAuthSysRecord> implemen
      * Create a detached TAuthSysRecord
      */
     public TAuthSysRecord() {
-        super(TAuthSys.T_AUTH_SYS);
+        super(T_AUTH_SYS.T_AUTH_SYS);
     }
 
     /**
      * Create a detached, initialised TAuthSysRecord
      */
     public TAuthSysRecord(UShort id, String sysName, String sysDesc, String sysDomain, LocalDateTime createTime, Integer createUser, String createUserName, LocalDateTime updateTime, Integer updateUser, String updateUserName, LocalDateTime deleteTime, Integer deleteUser, String deleteUserName, Boolean enabled) {
-        super(TAuthSys.T_AUTH_SYS);
+        super(T_AUTH_SYS.T_AUTH_SYS);
 
         set(0, id);
         set(1, sysName);

@@ -1,9 +1,12 @@
 package com.luzhiqing.bamboo.controller;
 
-import com.luzhiqing.bamboo.vo.request.LoginRequestVO;
-import com.luzhiqing.bamboo.vo.request.RegisterRequestVO;
-import com.luzhiqing.bamboo.vo.response.TokenResponseVO;
+import com.luzhiqing.bamboo.remote.dto.LoginDTO;
+import com.luzhiqing.bamboo.remote.dto.RegisterDTO;
+import com.luzhiqing.bamboo.remote.dto.TokenDTO;
+import com.luzhiqing.bamboo.service.AccountServie;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
@@ -13,25 +16,27 @@ import org.springframework.web.bind.annotation.RestController;
  * @CreateDate: 2019/10/1 21:08
  */
 @RestController
-@RequestMapping(value = "/")
 public class AccountController {
+    @Autowired
+    AccountServie accountServie;
     /**
      * 注册账号
      *
-     * @param registerRequestVO
+     * @param registerDTO
      * @return 注册账号主键
      */
-    public int register(RegisterRequestVO registerRequestVO) {
-        return 0;
+    @RequestMapping(value = "/auth/account/register",method = RequestMethod.POST)
+    public void register(RegisterDTO registerDTO) {
+         accountServie.register(registerDTO);
     }
 
     /**
      * 用户登录
      *
-     * @param loginRequestVO
-     * @return token
+     * @param loginDTO
+     * @return TokenDTO
      */
-    public TokenResponseVO login(LoginRequestVO loginRequestVO) {
-
+    public TokenDTO login(LoginDTO loginDTO) {
+        return null;
     }
 }

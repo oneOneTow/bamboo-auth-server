@@ -4,25 +4,15 @@
 package com.luzhiqing.bamboo.entity;
 
 
-import com.luzhiqing.bamboo.entity.tables.TAccountPlatform;
-import com.luzhiqing.bamboo.entity.tables.TAccountUser;
-import com.luzhiqing.bamboo.entity.tables.TAuthItem;
-import com.luzhiqing.bamboo.entity.tables.TAuthRole;
-import com.luzhiqing.bamboo.entity.tables.TAuthRoleStaffMapping;
-import com.luzhiqing.bamboo.entity.tables.TAuthSys;
-import com.luzhiqing.bamboo.entity.tables.TAuthSysMenu;
-import com.luzhiqing.bamboo.entity.tables.TBambooUser;
-import com.luzhiqing.bamboo.entity.tables.TStaff;
-
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-
-import javax.annotation.Generated;
-
+import com.luzhiqing.bamboo.entity.tables.*;
 import org.jooq.Catalog;
 import org.jooq.Table;
 import org.jooq.impl.SchemaImpl;
+
+import javax.annotation.Generated;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 
 /**
@@ -38,7 +28,7 @@ import org.jooq.impl.SchemaImpl;
 @SuppressWarnings({ "all", "unchecked", "rawtypes" })
 public class BambooAuth extends SchemaImpl {
 
-    private static final long serialVersionUID = -1451227089;
+    private static final long serialVersionUID = 492361951;
 
     /**
      * The reference instance of <code>bamboo_auth</code>
@@ -48,47 +38,47 @@ public class BambooAuth extends SchemaImpl {
     /**
      * 第三方用户信息
      */
-    public final TAccountPlatform T_ACCOUNT_PLATFORM = TAccountPlatform.T_ACCOUNT_PLATFORM;
+    public final T_ACCOUNT_PLATFORM T_ACCOUNT_PLATFORM = com.luzhiqing.bamboo.entity.tables.T_ACCOUNT_PLATFORM.T_ACCOUNT_PLATFORM;
 
     /**
      * 账户
      */
-    public final TAccountUser T_ACCOUNT_USER = TAccountUser.T_ACCOUNT_USER;
+    public final T_ACCOUNT_USER T_ACCOUNT_USER = com.luzhiqing.bamboo.entity.tables.T_ACCOUNT_USER.T_ACCOUNT_USER;
 
     /**
      * 系统权限
      */
-    public final TAuthItem T_AUTH_ITEM = TAuthItem.T_AUTH_ITEM;
+    public final T_AUTH_ITEM T_AUTH_ITEM = com.luzhiqing.bamboo.entity.tables.T_AUTH_ITEM.T_AUTH_ITEM;
 
     /**
      * 员工角色
      */
-    public final TAuthRole T_AUTH_ROLE = TAuthRole.T_AUTH_ROLE;
+    public final T_AUTH_ROLE T_AUTH_ROLE = com.luzhiqing.bamboo.entity.tables.T_AUTH_ROLE.T_AUTH_ROLE;
 
     /**
      * 权限角色与员工关系
      */
-    public final TAuthRoleStaffMapping T_AUTH_ROLE_STAFF_MAPPING = TAuthRoleStaffMapping.T_AUTH_ROLE_STAFF_MAPPING;
+    public final T_AUTH_ROLE_STAFF_MAPPING T_AUTH_ROLE_STAFF_MAPPING = com.luzhiqing.bamboo.entity.tables.T_AUTH_ROLE_STAFF_MAPPING.T_AUTH_ROLE_STAFF_MAPPING;
 
     /**
      * 系统map(登记目前存在的后台系统信息)
      */
-    public final TAuthSys T_AUTH_SYS = TAuthSys.T_AUTH_SYS;
+    public final T_AUTH_SYS T_AUTH_SYS = com.luzhiqing.bamboo.entity.tables.T_AUTH_SYS.T_AUTH_SYS;
 
     /**
      * 系统menu
      */
-    public final TAuthSysMenu T_AUTH_SYS_MENU = TAuthSysMenu.T_AUTH_SYS_MENU;
+    public final T_AUTH_SYS_MENU T_AUTH_SYS_MENU = com.luzhiqing.bamboo.entity.tables.T_AUTH_SYS_MENU.T_AUTH_SYS_MENU;
 
     /**
      * 账户信息
      */
-    public final TBambooUser T_BAMBOO_USER = TBambooUser.T_BAMBOO_USER;
+    public final T_BAMBOO_USER T_BAMBOO_USER = com.luzhiqing.bamboo.entity.tables.T_BAMBOO_USER.T_BAMBOO_USER;
 
     /**
      * 员工信息(这里列了大概的信息，多的可以垂直拆表)
      */
-    public final TStaff T_STAFF = TStaff.T_STAFF;
+    public final T_STAFF T_STAFF = com.luzhiqing.bamboo.entity.tables.T_STAFF.T_STAFF;
 
     /**
      * No further instances allowed
@@ -115,14 +105,14 @@ public class BambooAuth extends SchemaImpl {
 
     private final List<Table<?>> getTables0() {
         return Arrays.<Table<?>>asList(
-            TAccountPlatform.T_ACCOUNT_PLATFORM,
-            TAccountUser.T_ACCOUNT_USER,
-            TAuthItem.T_AUTH_ITEM,
-            TAuthRole.T_AUTH_ROLE,
-            TAuthRoleStaffMapping.T_AUTH_ROLE_STAFF_MAPPING,
-            TAuthSys.T_AUTH_SYS,
-            TAuthSysMenu.T_AUTH_SYS_MENU,
-            TBambooUser.T_BAMBOO_USER,
-            TStaff.T_STAFF);
+            T_ACCOUNT_PLATFORM.T_ACCOUNT_PLATFORM,
+            T_ACCOUNT_USER.T_ACCOUNT_USER,
+            T_AUTH_ITEM.T_AUTH_ITEM,
+            T_AUTH_ROLE.T_AUTH_ROLE,
+            T_AUTH_ROLE_STAFF_MAPPING.T_AUTH_ROLE_STAFF_MAPPING,
+            T_AUTH_SYS.T_AUTH_SYS,
+            T_AUTH_SYS_MENU.T_AUTH_SYS_MENU,
+            T_BAMBOO_USER.T_BAMBOO_USER,
+            T_STAFF.T_STAFF);
     }
 }

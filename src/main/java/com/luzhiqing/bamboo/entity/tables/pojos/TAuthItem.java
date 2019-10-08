@@ -4,13 +4,12 @@
 package com.luzhiqing.bamboo.entity.tables.pojos;
 
 
-import java.io.Serializable;
-import java.time.LocalDateTime;
-
-import javax.annotation.Generated;
-
 import org.jooq.types.UByte;
 import org.jooq.types.UInteger;
+
+import javax.annotation.Generated;
+import java.io.Serializable;
+import java.time.LocalDateTime;
 
 
 /**

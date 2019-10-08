@@ -5,18 +5,16 @@ package com.luzhiqing.bamboo.entity.tables.records;
 
 
 import com.luzhiqing.bamboo.constants.enums.GenderType;
-import com.luzhiqing.bamboo.entity.tables.TStaff;
-
-import java.time.LocalDateTime;
-
-import javax.annotation.Generated;
-
+import com.luzhiqing.bamboo.entity.tables.T_STAFF;
 import org.jooq.Field;
 import org.jooq.Record1;
 import org.jooq.Record18;
 import org.jooq.Row18;
 import org.jooq.impl.UpdatableRecordImpl;
 import org.jooq.types.UInteger;
+
+import javax.annotation.Generated;
+import java.time.LocalDateTime;
 
 
 /**
@@ -32,7 +30,7 @@ import org.jooq.types.UInteger;
 @SuppressWarnings({ "all", "unchecked", "rawtypes" })
 public class TStaffRecord extends UpdatableRecordImpl<TStaffRecord> implements Record18<UInteger, UInteger, String, String, String, String, String, GenderType, LocalDateTime, Integer, String, LocalDateTime, Integer, String, LocalDateTime, Integer, String, Boolean> {
 
-    private static final long serialVersionUID = 155536236;
+    private static final long serialVersionUID = -410479171;
 
     /**
      * Setter for <code>bamboo_auth.t_staff.id</code>. 员工id
@@ -323,7 +321,7 @@ public class TStaffRecord extends UpdatableRecordImpl<TStaffRecord> implements R
      */
     @Override
     public Field<UInteger> field1() {
-        return TStaff.T_STAFF.ID;
+        return T_STAFF.T_STAFF.ID;
     }
 
     /**
@@ -331,7 +329,7 @@ public class TStaffRecord extends UpdatableRecordImpl<TStaffRecord> implements R
      */
     @Override
     public Field<UInteger> field2() {
-        return TStaff.T_STAFF.UID;
+        return T_STAFF.T_STAFF.UID;
     }
 
     /**
@@ -339,7 +337,7 @@ public class TStaffRecord extends UpdatableRecordImpl<TStaffRecord> implements R
      */
     @Override
     public Field<String> field3() {
-        return TStaff.T_STAFF.EMAIL;
+        return T_STAFF.T_STAFF.EMAIL;
     }
 
     /**
@@ -347,7 +345,7 @@ public class TStaffRecord extends UpdatableRecordImpl<TStaffRecord> implements R
      */
     @Override
     public Field<String> field4() {
-        return TStaff.T_STAFF.PHONE;
+        return T_STAFF.T_STAFF.PHONE;
     }
 
     /**
@@ -355,7 +353,7 @@ public class TStaffRecord extends UpdatableRecordImpl<TStaffRecord> implements R
      */
     @Override
     public Field<String> field5() {
-        return TStaff.T_STAFF.STAFF_NAME;
+        return T_STAFF.T_STAFF.STAFF_NAME;
     }
 
     /**
@@ -363,7 +361,7 @@ public class TStaffRecord extends UpdatableRecordImpl<TStaffRecord> implements R
      */
     @Override
     public Field<String> field6() {
-        return TStaff.T_STAFF.NICKNAME;
+        return T_STAFF.T_STAFF.NICKNAME;
     }
 
     /**
@@ -371,7 +369,7 @@ public class TStaffRecord extends UpdatableRecordImpl<TStaffRecord> implements R
      */
     @Override
     public Field<String> field7() {
-        return TStaff.T_STAFF.AVATAR;
+        return T_STAFF.T_STAFF.AVATAR;
     }
 
     /**
@@ -379,7 +377,7 @@ public class TStaffRecord extends UpdatableRecordImpl<TStaffRecord> implements R
      */
     @Override
     public Field<GenderType> field8() {
-        return TStaff.T_STAFF.GENDER;
+        return T_STAFF.T_STAFF.GENDER;
     }
 
     /**
@@ -387,7 +385,7 @@ public class TStaffRecord extends UpdatableRecordImpl<TStaffRecord> implements R
      */
     @Override
     public Field<LocalDateTime> field9() {
-        return TStaff.T_STAFF.CREATE_TIME;
+        return T_STAFF.T_STAFF.CREATE_TIME;
     }
 
     /**
@@ -395,7 +393,7 @@ public class TStaffRecord extends UpdatableRecordImpl<TStaffRecord> implements R
      */
     @Override
     public Field<Integer> field10() {
-        return TStaff.T_STAFF.CREATE_USER;
+        return T_STAFF.T_STAFF.CREATE_USER;
     }
 
     /**
@@ -403,7 +401,7 @@ public class TStaffRecord extends UpdatableRecordImpl<TStaffRecord> implements R
      */
     @Override
     public Field<String> field11() {
-        return TStaff.T_STAFF.CREATE_USER_NAME;
+        return T_STAFF.T_STAFF.CREATE_USER_NAME;
     }
 
     /**
@@ -411,7 +409,7 @@ public class TStaffRecord extends UpdatableRecordImpl<TStaffRecord> implements R
      */
     @Override
     public Field<LocalDateTime> field12() {
-        return TStaff.T_STAFF.UPDATE_TIME;
+        return T_STAFF.T_STAFF.UPDATE_TIME;
     }
 
     /**
@@ -419,7 +417,7 @@ public class TStaffRecord extends UpdatableRecordImpl<TStaffRecord> implements R
      */
     @Override
     public Field<Integer> field13() {
-        return TStaff.T_STAFF.UPDATE_USER;
+        return T_STAFF.T_STAFF.UPDATE_USER;
     }
 
     /**
@@ -427,7 +425,7 @@ public class TStaffRecord extends UpdatableRecordImpl<TStaffRecord> implements R
      */
     @Override
     public Field<String> field14() {
-        return TStaff.T_STAFF.UPDATE_USER_NAME;
+        return T_STAFF.T_STAFF.UPDATE_USER_NAME;
     }
 
     /**
@@ -435,7 +433,7 @@ public class TStaffRecord extends UpdatableRecordImpl<TStaffRecord> implements R
      */
     @Override
     public Field<LocalDateTime> field15() {
-        return TStaff.T_STAFF.DELETE_TIME;
+        return T_STAFF.T_STAFF.DELETE_TIME;
     }
 
     /**
@@ -443,7 +441,7 @@ public class TStaffRecord extends UpdatableRecordImpl<TStaffRecord> implements R
      */
     @Override
     public Field<Integer> field16() {
-        return TStaff.T_STAFF.DELETE_USER;
+        return T_STAFF.T_STAFF.DELETE_USER;
     }
 
     /**
@@ -451,7 +449,7 @@ public class TStaffRecord extends UpdatableRecordImpl<TStaffRecord> implements R
      */
     @Override
     public Field<String> field17() {
-        return TStaff.T_STAFF.DELETE_USER_NAME;
+        return T_STAFF.T_STAFF.DELETE_USER_NAME;
     }
 
     /**
@@ -459,7 +457,7 @@ public class TStaffRecord extends UpdatableRecordImpl<TStaffRecord> implements R
      */
     @Override
     public Field<Boolean> field18() {
-        return TStaff.T_STAFF.ENABLED;
+        return T_STAFF.T_STAFF.ENABLED;
     }
 
     /**
@@ -946,14 +944,14 @@ public class TStaffRecord extends UpdatableRecordImpl<TStaffRecord> implements R
      * Create a detached TStaffRecord
      */
     public TStaffRecord() {
-        super(TStaff.T_STAFF);
+        super(T_STAFF.T_STAFF);
     }
 
     /**
      * Create a detached, initialised TStaffRecord
      */
     public TStaffRecord(UInteger id, UInteger uid, String email, String phone, String staffName, String nickname, String avatar, GenderType gender, LocalDateTime createTime, Integer createUser, String createUserName, LocalDateTime updateTime, Integer updateUser, String updateUserName, LocalDateTime deleteTime, Integer deleteUser, String deleteUserName, Boolean enabled) {
-        super(TStaff.T_STAFF);
+        super(T_STAFF.T_STAFF);
 
         set(0, id);
         set(1, uid);

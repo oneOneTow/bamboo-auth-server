@@ -4,12 +4,7 @@
 package com.luzhiqing.bamboo.entity.tables.records;
 
 
-import com.luzhiqing.bamboo.entity.tables.TAuthItem;
-
-import java.time.LocalDateTime;
-
-import javax.annotation.Generated;
-
+import com.luzhiqing.bamboo.entity.tables.T_AUTH_ITEM;
 import org.jooq.Field;
 import org.jooq.Record1;
 import org.jooq.Record13;
@@ -17,6 +12,9 @@ import org.jooq.Row13;
 import org.jooq.impl.UpdatableRecordImpl;
 import org.jooq.types.UByte;
 import org.jooq.types.UInteger;
+
+import javax.annotation.Generated;
+import java.time.LocalDateTime;
 
 
 /**
@@ -32,7 +30,7 @@ import org.jooq.types.UInteger;
 @SuppressWarnings({ "all", "unchecked", "rawtypes" })
 public class TAuthItemRecord extends UpdatableRecordImpl<TAuthItemRecord> implements Record13<UInteger, UByte, String, LocalDateTime, Integer, String, LocalDateTime, Integer, String, LocalDateTime, Integer, String, Boolean> {
 
-    private static final long serialVersionUID = -173956094;
+    private static final long serialVersionUID = -594756030;
 
     /**
      * Setter for <code>bamboo_auth.t_auth_item.id</code>. 自增id
@@ -253,7 +251,7 @@ public class TAuthItemRecord extends UpdatableRecordImpl<TAuthItemRecord> implem
      */
     @Override
     public Field<UInteger> field1() {
-        return TAuthItem.T_AUTH_ITEM.ID;
+        return T_AUTH_ITEM.T_AUTH_ITEM.ID;
     }
 
     /**
@@ -261,7 +259,7 @@ public class TAuthItemRecord extends UpdatableRecordImpl<TAuthItemRecord> implem
      */
     @Override
     public Field<UByte> field2() {
-        return TAuthItem.T_AUTH_ITEM.SYS_ID;
+        return T_AUTH_ITEM.T_AUTH_ITEM.SYS_ID;
     }
 
     /**
@@ -269,7 +267,7 @@ public class TAuthItemRecord extends UpdatableRecordImpl<TAuthItemRecord> implem
      */
     @Override
     public Field<String> field3() {
-        return TAuthItem.T_AUTH_ITEM.MENU_ID;
+        return T_AUTH_ITEM.T_AUTH_ITEM.MENU_ID;
     }
 
     /**
@@ -277,7 +275,7 @@ public class TAuthItemRecord extends UpdatableRecordImpl<TAuthItemRecord> implem
      */
     @Override
     public Field<LocalDateTime> field4() {
-        return TAuthItem.T_AUTH_ITEM.CREATE_TIME;
+        return T_AUTH_ITEM.T_AUTH_ITEM.CREATE_TIME;
     }
 
     /**
@@ -285,7 +283,7 @@ public class TAuthItemRecord extends UpdatableRecordImpl<TAuthItemRecord> implem
      */
     @Override
     public Field<Integer> field5() {
-        return TAuthItem.T_AUTH_ITEM.CREATE_USER;
+        return T_AUTH_ITEM.T_AUTH_ITEM.CREATE_USER;
     }
 
     /**
@@ -293,7 +291,7 @@ public class TAuthItemRecord extends UpdatableRecordImpl<TAuthItemRecord> implem
      */
     @Override
     public Field<String> field6() {
-        return TAuthItem.T_AUTH_ITEM.CREATE_USER_NAME;
+        return T_AUTH_ITEM.T_AUTH_ITEM.CREATE_USER_NAME;
     }
 
     /**
@@ -301,7 +299,7 @@ public class TAuthItemRecord extends UpdatableRecordImpl<TAuthItemRecord> implem
      */
     @Override
     public Field<LocalDateTime> field7() {
-        return TAuthItem.T_AUTH_ITEM.UPDATE_TIME;
+        return T_AUTH_ITEM.T_AUTH_ITEM.UPDATE_TIME;
     }
 
     /**
@@ -309,7 +307,7 @@ public class TAuthItemRecord extends UpdatableRecordImpl<TAuthItemRecord> implem
      */
     @Override
     public Field<Integer> field8() {
-        return TAuthItem.T_AUTH_ITEM.UPDATE_USER;
+        return T_AUTH_ITEM.T_AUTH_ITEM.UPDATE_USER;
     }
 
     /**
@@ -317,7 +315,7 @@ public class TAuthItemRecord extends UpdatableRecordImpl<TAuthItemRecord> implem
      */
     @Override
     public Field<String> field9() {
-        return TAuthItem.T_AUTH_ITEM.UPDATE_USER_NAME;
+        return T_AUTH_ITEM.T_AUTH_ITEM.UPDATE_USER_NAME;
     }
 
     /**
@@ -325,7 +323,7 @@ public class TAuthItemRecord extends UpdatableRecordImpl<TAuthItemRecord> implem
      */
     @Override
     public Field<LocalDateTime> field10() {
-        return TAuthItem.T_AUTH_ITEM.DELETE_TIME;
+        return T_AUTH_ITEM.T_AUTH_ITEM.DELETE_TIME;
     }
 
     /**
@@ -333,7 +331,7 @@ public class TAuthItemRecord extends UpdatableRecordImpl<TAuthItemRecord> implem
      */
     @Override
     public Field<Integer> field11() {
-        return TAuthItem.T_AUTH_ITEM.DELETE_USER;
+        return T_AUTH_ITEM.T_AUTH_ITEM.DELETE_USER;
     }
 
     /**
@@ -341,7 +339,7 @@ public class TAuthItemRecord extends UpdatableRecordImpl<TAuthItemRecord> implem
      */
     @Override
     public Field<String> field12() {
-        return TAuthItem.T_AUTH_ITEM.DELETE_USER_NAME;
+        return T_AUTH_ITEM.T_AUTH_ITEM.DELETE_USER_NAME;
     }
 
     /**
@@ -349,7 +347,7 @@ public class TAuthItemRecord extends UpdatableRecordImpl<TAuthItemRecord> implem
      */
     @Override
     public Field<Boolean> field13() {
-        return TAuthItem.T_AUTH_ITEM.ENABLED;
+        return T_AUTH_ITEM.T_AUTH_ITEM.ENABLED;
     }
 
     /**
@@ -706,14 +704,14 @@ public class TAuthItemRecord extends UpdatableRecordImpl<TAuthItemRecord> implem
      * Create a detached TAuthItemRecord
      */
     public TAuthItemRecord() {
-        super(TAuthItem.T_AUTH_ITEM);
+        super(T_AUTH_ITEM.T_AUTH_ITEM);
     }
 
     /**
      * Create a detached, initialised TAuthItemRecord
      */
     public TAuthItemRecord(UInteger id, UByte sysId, String menuId, LocalDateTime createTime, Integer createUser, String createUserName, LocalDateTime updateTime, Integer updateUser, String updateUserName, LocalDateTime deleteTime, Integer deleteUser, String deleteUserName, Boolean enabled) {
-        super(TAuthItem.T_AUTH_ITEM);
+        super(T_AUTH_ITEM.T_AUTH_ITEM);
 
         set(0, id);
         set(1, sysId);

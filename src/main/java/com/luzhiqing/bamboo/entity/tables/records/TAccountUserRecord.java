@@ -4,18 +4,16 @@
 package com.luzhiqing.bamboo.entity.tables.records;
 
 
-import com.luzhiqing.bamboo.entity.tables.TAccountUser;
-
-import java.time.LocalDateTime;
-
-import javax.annotation.Generated;
-
+import com.luzhiqing.bamboo.entity.tables.T_ACCOUNT_USER;
 import org.jooq.Field;
 import org.jooq.Record1;
 import org.jooq.Record16;
 import org.jooq.Row16;
 import org.jooq.impl.UpdatableRecordImpl;
 import org.jooq.types.UInteger;
+
+import javax.annotation.Generated;
+import java.time.LocalDateTime;
 
 
 /**
@@ -31,7 +29,7 @@ import org.jooq.types.UInteger;
 @SuppressWarnings({ "all", "unchecked", "rawtypes" })
 public class TAccountUserRecord extends UpdatableRecordImpl<TAccountUserRecord> implements Record16<UInteger, String, String, String, String, Integer, LocalDateTime, Integer, String, LocalDateTime, Integer, String, LocalDateTime, Integer, String, Boolean> {
 
-    private static final long serialVersionUID = -444673215;
+    private static final long serialVersionUID = -995449043;
 
     /**
      * Setter for <code>bamboo_auth.t_account_user.id</code>. 账号id
@@ -294,7 +292,7 @@ public class TAccountUserRecord extends UpdatableRecordImpl<TAccountUserRecord> 
      */
     @Override
     public Field<UInteger> field1() {
-        return TAccountUser.T_ACCOUNT_USER.ID;
+        return T_ACCOUNT_USER.T_ACCOUNT_USER.ID;
     }
 
     /**
@@ -302,7 +300,7 @@ public class TAccountUserRecord extends UpdatableRecordImpl<TAccountUserRecord> 
      */
     @Override
     public Field<String> field2() {
-        return TAccountUser.T_ACCOUNT_USER.EMAIL;
+        return T_ACCOUNT_USER.T_ACCOUNT_USER.EMAIL;
     }
 
     /**
@@ -310,7 +308,7 @@ public class TAccountUserRecord extends UpdatableRecordImpl<TAccountUserRecord> 
      */
     @Override
     public Field<String> field3() {
-        return TAccountUser.T_ACCOUNT_USER.PHONE;
+        return T_ACCOUNT_USER.T_ACCOUNT_USER.PHONE;
     }
 
     /**
@@ -318,7 +316,7 @@ public class TAccountUserRecord extends UpdatableRecordImpl<TAccountUserRecord> 
      */
     @Override
     public Field<String> field4() {
-        return TAccountUser.T_ACCOUNT_USER.USER_NAME;
+        return T_ACCOUNT_USER.T_ACCOUNT_USER.USER_NAME;
     }
 
     /**
@@ -326,7 +324,7 @@ public class TAccountUserRecord extends UpdatableRecordImpl<TAccountUserRecord> 
      */
     @Override
     public Field<String> field5() {
-        return TAccountUser.T_ACCOUNT_USER.PASSWORD;
+        return T_ACCOUNT_USER.T_ACCOUNT_USER.PASSWORD;
     }
 
     /**
@@ -334,7 +332,7 @@ public class TAccountUserRecord extends UpdatableRecordImpl<TAccountUserRecord> 
      */
     @Override
     public Field<Integer> field6() {
-        return TAccountUser.T_ACCOUNT_USER.LOGIN_TIMES;
+        return T_ACCOUNT_USER.T_ACCOUNT_USER.LOGIN_TIMES;
     }
 
     /**
@@ -342,7 +340,7 @@ public class TAccountUserRecord extends UpdatableRecordImpl<TAccountUserRecord> 
      */
     @Override
     public Field<LocalDateTime> field7() {
-        return TAccountUser.T_ACCOUNT_USER.CREATE_TIME;
+        return T_ACCOUNT_USER.T_ACCOUNT_USER.CREATE_TIME;
     }
 
     /**
@@ -350,7 +348,7 @@ public class TAccountUserRecord extends UpdatableRecordImpl<TAccountUserRecord> 
      */
     @Override
     public Field<Integer> field8() {
-        return TAccountUser.T_ACCOUNT_USER.CREATE_USER;
+        return T_ACCOUNT_USER.T_ACCOUNT_USER.CREATE_USER;
     }
 
     /**
@@ -358,7 +356,7 @@ public class TAccountUserRecord extends UpdatableRecordImpl<TAccountUserRecord> 
      */
     @Override
     public Field<String> field9() {
-        return TAccountUser.T_ACCOUNT_USER.CREATE_USER_NAME;
+        return T_ACCOUNT_USER.T_ACCOUNT_USER.CREATE_USER_NAME;
     }
 
     /**
@@ -366,7 +364,7 @@ public class TAccountUserRecord extends UpdatableRecordImpl<TAccountUserRecord> 
      */
     @Override
     public Field<LocalDateTime> field10() {
-        return TAccountUser.T_ACCOUNT_USER.UPDATE_TIME;
+        return T_ACCOUNT_USER.T_ACCOUNT_USER.UPDATE_TIME;
     }
 
     /**
@@ -374,7 +372,7 @@ public class TAccountUserRecord extends UpdatableRecordImpl<TAccountUserRecord> 
      */
     @Override
     public Field<Integer> field11() {
-        return TAccountUser.T_ACCOUNT_USER.UPDATE_USER;
+        return T_ACCOUNT_USER.T_ACCOUNT_USER.UPDATE_USER;
     }
 
     /**
@@ -382,7 +380,7 @@ public class TAccountUserRecord extends UpdatableRecordImpl<TAccountUserRecord> 
      */
     @Override
     public Field<String> field12() {
-        return TAccountUser.T_ACCOUNT_USER.UPDATE_USER_NAME;
+        return T_ACCOUNT_USER.T_ACCOUNT_USER.UPDATE_USER_NAME;
     }
 
     /**
@@ -390,7 +388,7 @@ public class TAccountUserRecord extends UpdatableRecordImpl<TAccountUserRecord> 
      */
     @Override
     public Field<LocalDateTime> field13() {
-        return TAccountUser.T_ACCOUNT_USER.DELETE_TIME;
+        return T_ACCOUNT_USER.T_ACCOUNT_USER.DELETE_TIME;
     }
 
     /**
@@ -398,7 +396,7 @@ public class TAccountUserRecord extends UpdatableRecordImpl<TAccountUserRecord> 
      */
     @Override
     public Field<Integer> field14() {
-        return TAccountUser.T_ACCOUNT_USER.DELETE_USER;
+        return T_ACCOUNT_USER.T_ACCOUNT_USER.DELETE_USER;
     }
 
     /**
@@ -406,7 +404,7 @@ public class TAccountUserRecord extends UpdatableRecordImpl<TAccountUserRecord> 
      */
     @Override
     public Field<String> field15() {
-        return TAccountUser.T_ACCOUNT_USER.DELETE_USER_NAME;
+        return T_ACCOUNT_USER.T_ACCOUNT_USER.DELETE_USER_NAME;
     }
 
     /**
@@ -414,7 +412,7 @@ public class TAccountUserRecord extends UpdatableRecordImpl<TAccountUserRecord> 
      */
     @Override
     public Field<Boolean> field16() {
-        return TAccountUser.T_ACCOUNT_USER.ENABLED;
+        return T_ACCOUNT_USER.T_ACCOUNT_USER.ENABLED;
     }
 
     /**
@@ -849,14 +847,14 @@ public class TAccountUserRecord extends UpdatableRecordImpl<TAccountUserRecord> 
      * Create a detached TAccountUserRecord
      */
     public TAccountUserRecord() {
-        super(TAccountUser.T_ACCOUNT_USER);
+        super(T_ACCOUNT_USER.T_ACCOUNT_USER);
     }
 
     /**
      * Create a detached, initialised TAccountUserRecord
      */
     public TAccountUserRecord(UInteger id, String email, String phone, String userName, String password, Integer loginTimes, LocalDateTime createTime, Integer createUser, String createUserName, LocalDateTime updateTime, Integer updateUser, String updateUserName, LocalDateTime deleteTime, Integer deleteUser, String deleteUserName, Boolean enabled) {
-        super(TAccountUser.T_ACCOUNT_USER);
+        super(T_ACCOUNT_USER.T_ACCOUNT_USER);
 
         set(0, id);
         set(1, email);

@@ -4,14 +4,13 @@
 package com.luzhiqing.bamboo.entity;
 
 
+import org.jooq.Schema;
+import org.jooq.impl.CatalogImpl;
+
+import javax.annotation.Generated;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-
-import javax.annotation.Generated;
-
-import org.jooq.Schema;
-import org.jooq.impl.CatalogImpl;
 
 
 /**
@@ -37,7 +36,7 @@ public class DefaultCatalog extends CatalogImpl {
     /**
      * The schema <code>bamboo_auth</code>.
      */
-    public final BambooAuth BAMBOO_AUTH = BambooAuth.BAMBOO_AUTH;
+    public final BambooAuth BAMBOO_AUTH = com.luzhiqing.bamboo.entity.BambooAuth.BAMBOO_AUTH;
 
     /**
      * No further instances allowed

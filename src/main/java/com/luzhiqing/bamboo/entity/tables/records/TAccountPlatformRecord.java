@@ -5,18 +5,16 @@ package com.luzhiqing.bamboo.entity.tables.records;
 
 
 import com.luzhiqing.bamboo.constants.enums.AccountType;
-import com.luzhiqing.bamboo.entity.tables.TAccountPlatform;
-
-import java.time.LocalDateTime;
-
-import javax.annotation.Generated;
-
+import com.luzhiqing.bamboo.entity.tables.T_ACCOUNT_PLATFORM;
 import org.jooq.Field;
 import org.jooq.Record1;
 import org.jooq.Record17;
 import org.jooq.Row17;
 import org.jooq.impl.UpdatableRecordImpl;
 import org.jooq.types.UInteger;
+
+import javax.annotation.Generated;
+import java.time.LocalDateTime;
 
 
 /**
@@ -32,7 +30,7 @@ import org.jooq.types.UInteger;
 @SuppressWarnings({ "all", "unchecked", "rawtypes" })
 public class TAccountPlatformRecord extends UpdatableRecordImpl<TAccountPlatformRecord> implements Record17<UInteger, UInteger, String, String, AccountType, String, String, LocalDateTime, Integer, String, LocalDateTime, Integer, String, LocalDateTime, Integer, String, Boolean> {
 
-    private static final long serialVersionUID = -271505485;
+    private static final long serialVersionUID = -526803653;
 
     /**
      * Setter for <code>bamboo_auth.t_account_platform.id</code>. 自增id
@@ -309,7 +307,7 @@ public class TAccountPlatformRecord extends UpdatableRecordImpl<TAccountPlatform
      */
     @Override
     public Field<UInteger> field1() {
-        return TAccountPlatform.T_ACCOUNT_PLATFORM.ID;
+        return T_ACCOUNT_PLATFORM.T_ACCOUNT_PLATFORM.ID;
     }
 
     /**
@@ -317,7 +315,7 @@ public class TAccountPlatformRecord extends UpdatableRecordImpl<TAccountPlatform
      */
     @Override
     public Field<UInteger> field2() {
-        return TAccountPlatform.T_ACCOUNT_PLATFORM.UID;
+        return T_ACCOUNT_PLATFORM.T_ACCOUNT_PLATFORM.UID;
     }
 
     /**
@@ -325,7 +323,7 @@ public class TAccountPlatformRecord extends UpdatableRecordImpl<TAccountPlatform
      */
     @Override
     public Field<String> field3() {
-        return TAccountPlatform.T_ACCOUNT_PLATFORM.PLATFORM_ID;
+        return T_ACCOUNT_PLATFORM.T_ACCOUNT_PLATFORM.PLATFORM_ID;
     }
 
     /**
@@ -333,7 +331,7 @@ public class TAccountPlatformRecord extends UpdatableRecordImpl<TAccountPlatform
      */
     @Override
     public Field<String> field4() {
-        return TAccountPlatform.T_ACCOUNT_PLATFORM.PLATFORM_TOKEN;
+        return T_ACCOUNT_PLATFORM.T_ACCOUNT_PLATFORM.PLATFORM_TOKEN;
     }
 
     /**
@@ -341,7 +339,7 @@ public class TAccountPlatformRecord extends UpdatableRecordImpl<TAccountPlatform
      */
     @Override
     public Field<AccountType> field5() {
-        return TAccountPlatform.T_ACCOUNT_PLATFORM.ACCOUNT_TYPE;
+        return T_ACCOUNT_PLATFORM.T_ACCOUNT_PLATFORM.ACCOUNT_TYPE;
     }
 
     /**
@@ -349,7 +347,7 @@ public class TAccountPlatformRecord extends UpdatableRecordImpl<TAccountPlatform
      */
     @Override
     public Field<String> field6() {
-        return TAccountPlatform.T_ACCOUNT_PLATFORM.NICKNAME;
+        return T_ACCOUNT_PLATFORM.T_ACCOUNT_PLATFORM.NICKNAME;
     }
 
     /**
@@ -357,7 +355,7 @@ public class TAccountPlatformRecord extends UpdatableRecordImpl<TAccountPlatform
      */
     @Override
     public Field<String> field7() {
-        return TAccountPlatform.T_ACCOUNT_PLATFORM.AVATAR;
+        return T_ACCOUNT_PLATFORM.T_ACCOUNT_PLATFORM.AVATAR;
     }
 
     /**
@@ -365,7 +363,7 @@ public class TAccountPlatformRecord extends UpdatableRecordImpl<TAccountPlatform
      */
     @Override
     public Field<LocalDateTime> field8() {
-        return TAccountPlatform.T_ACCOUNT_PLATFORM.CREATE_TIME;
+        return T_ACCOUNT_PLATFORM.T_ACCOUNT_PLATFORM.CREATE_TIME;
     }
 
     /**
@@ -373,7 +371,7 @@ public class TAccountPlatformRecord extends UpdatableRecordImpl<TAccountPlatform
      */
     @Override
     public Field<Integer> field9() {
-        return TAccountPlatform.T_ACCOUNT_PLATFORM.CREATE_USER;
+        return T_ACCOUNT_PLATFORM.T_ACCOUNT_PLATFORM.CREATE_USER;
     }
 
     /**
@@ -381,7 +379,7 @@ public class TAccountPlatformRecord extends UpdatableRecordImpl<TAccountPlatform
      */
     @Override
     public Field<String> field10() {
-        return TAccountPlatform.T_ACCOUNT_PLATFORM.CREATE_USER_NAME;
+        return T_ACCOUNT_PLATFORM.T_ACCOUNT_PLATFORM.CREATE_USER_NAME;
     }
 
     /**
@@ -389,7 +387,7 @@ public class TAccountPlatformRecord extends UpdatableRecordImpl<TAccountPlatform
      */
     @Override
     public Field<LocalDateTime> field11() {
-        return TAccountPlatform.T_ACCOUNT_PLATFORM.UPDATE_TIME;
+        return T_ACCOUNT_PLATFORM.T_ACCOUNT_PLATFORM.UPDATE_TIME;
     }
 
     /**
@@ -397,7 +395,7 @@ public class TAccountPlatformRecord extends UpdatableRecordImpl<TAccountPlatform
      */
     @Override
     public Field<Integer> field12() {
-        return TAccountPlatform.T_ACCOUNT_PLATFORM.UPDATE_USER;
+        return T_ACCOUNT_PLATFORM.T_ACCOUNT_PLATFORM.UPDATE_USER;
     }
 
     /**
@@ -405,7 +403,7 @@ public class TAccountPlatformRecord extends UpdatableRecordImpl<TAccountPlatform
      */
     @Override
     public Field<String> field13() {
-        return TAccountPlatform.T_ACCOUNT_PLATFORM.UPDATE_USER_NAME;
+        return T_ACCOUNT_PLATFORM.T_ACCOUNT_PLATFORM.UPDATE_USER_NAME;
     }
 
     /**
@@ -413,7 +411,7 @@ public class TAccountPlatformRecord extends UpdatableRecordImpl<TAccountPlatform
      */
     @Override
     public Field<LocalDateTime> field14() {
-        return TAccountPlatform.T_ACCOUNT_PLATFORM.DELETE_TIME;
+        return T_ACCOUNT_PLATFORM.T_ACCOUNT_PLATFORM.DELETE_TIME;
     }
 
     /**
@@ -421,7 +419,7 @@ public class TAccountPlatformRecord extends UpdatableRecordImpl<TAccountPlatform
      */
     @Override
     public Field<Integer> field15() {
-        return TAccountPlatform.T_ACCOUNT_PLATFORM.DELETE_USER;
+        return T_ACCOUNT_PLATFORM.T_ACCOUNT_PLATFORM.DELETE_USER;
     }
 
     /**
@@ -429,7 +427,7 @@ public class TAccountPlatformRecord extends UpdatableRecordImpl<TAccountPlatform
      */
     @Override
     public Field<String> field16() {
-        return TAccountPlatform.T_ACCOUNT_PLATFORM.DELETE_USER_NAME;
+        return T_ACCOUNT_PLATFORM.T_ACCOUNT_PLATFORM.DELETE_USER_NAME;
     }
 
     /**
@@ -437,7 +435,7 @@ public class TAccountPlatformRecord extends UpdatableRecordImpl<TAccountPlatform
      */
     @Override
     public Field<Boolean> field17() {
-        return TAccountPlatform.T_ACCOUNT_PLATFORM.ENABLED;
+        return T_ACCOUNT_PLATFORM.T_ACCOUNT_PLATFORM.ENABLED;
     }
 
     /**
@@ -898,14 +896,14 @@ public class TAccountPlatformRecord extends UpdatableRecordImpl<TAccountPlatform
      * Create a detached TAccountPlatformRecord
      */
     public TAccountPlatformRecord() {
-        super(TAccountPlatform.T_ACCOUNT_PLATFORM);
+        super(T_ACCOUNT_PLATFORM.T_ACCOUNT_PLATFORM);
     }
 
     /**
      * Create a detached, initialised TAccountPlatformRecord
      */
     public TAccountPlatformRecord(UInteger id, UInteger uid, String platformId, String platformToken, AccountType accountType, String nickname, String avatar, LocalDateTime createTime, Integer createUser, String createUserName, LocalDateTime updateTime, Integer updateUser, String updateUserName, LocalDateTime deleteTime, Integer deleteUser, String deleteUserName, Boolean enabled) {
-        super(TAccountPlatform.T_ACCOUNT_PLATFORM);
+        super(T_ACCOUNT_PLATFORM.T_ACCOUNT_PLATFORM);
 
         set(0, id);
         set(1, uid);

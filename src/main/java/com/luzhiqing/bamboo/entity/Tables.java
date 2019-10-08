@@ -4,15 +4,7 @@
 package com.luzhiqing.bamboo.entity;
 
 
-import com.luzhiqing.bamboo.entity.tables.TAccountPlatform;
-import com.luzhiqing.bamboo.entity.tables.TAccountUser;
-import com.luzhiqing.bamboo.entity.tables.TAuthItem;
-import com.luzhiqing.bamboo.entity.tables.TAuthRole;
-import com.luzhiqing.bamboo.entity.tables.TAuthRoleStaffMapping;
-import com.luzhiqing.bamboo.entity.tables.TAuthSys;
-import com.luzhiqing.bamboo.entity.tables.TAuthSysMenu;
-import com.luzhiqing.bamboo.entity.tables.TBambooUser;
-import com.luzhiqing.bamboo.entity.tables.TStaff;
+import com.luzhiqing.bamboo.entity.tables.*;
 
 import javax.annotation.Generated;
 
@@ -33,45 +25,45 @@ public class Tables {
     /**
      * 第三方用户信息
      */
-    public static final TAccountPlatform T_ACCOUNT_PLATFORM = TAccountPlatform.T_ACCOUNT_PLATFORM;
+    public static final T_ACCOUNT_PLATFORM T_ACCOUNT_PLATFORM = com.luzhiqing.bamboo.entity.tables.T_ACCOUNT_PLATFORM.T_ACCOUNT_PLATFORM;
 
     /**
      * 账户
      */
-    public static final TAccountUser T_ACCOUNT_USER = TAccountUser.T_ACCOUNT_USER;
+    public static final T_ACCOUNT_USER T_ACCOUNT_USER = com.luzhiqing.bamboo.entity.tables.T_ACCOUNT_USER.T_ACCOUNT_USER;
 
     /**
      * 系统权限
      */
-    public static final TAuthItem T_AUTH_ITEM = TAuthItem.T_AUTH_ITEM;
+    public static final T_AUTH_ITEM T_AUTH_ITEM = com.luzhiqing.bamboo.entity.tables.T_AUTH_ITEM.T_AUTH_ITEM;
 
     /**
      * 员工角色
      */
-    public static final TAuthRole T_AUTH_ROLE = TAuthRole.T_AUTH_ROLE;
+    public static final T_AUTH_ROLE T_AUTH_ROLE = com.luzhiqing.bamboo.entity.tables.T_AUTH_ROLE.T_AUTH_ROLE;
 
     /**
      * 权限角色与员工关系
      */
-    public static final TAuthRoleStaffMapping T_AUTH_ROLE_STAFF_MAPPING = TAuthRoleStaffMapping.T_AUTH_ROLE_STAFF_MAPPING;
+    public static final T_AUTH_ROLE_STAFF_MAPPING T_AUTH_ROLE_STAFF_MAPPING = com.luzhiqing.bamboo.entity.tables.T_AUTH_ROLE_STAFF_MAPPING.T_AUTH_ROLE_STAFF_MAPPING;
 
     /**
      * 系统map(登记目前存在的后台系统信息)
      */
-    public static final TAuthSys T_AUTH_SYS = TAuthSys.T_AUTH_SYS;
+    public static final T_AUTH_SYS T_AUTH_SYS = com.luzhiqing.bamboo.entity.tables.T_AUTH_SYS.T_AUTH_SYS;
 
     /**
      * 系统menu
      */
-    public static final TAuthSysMenu T_AUTH_SYS_MENU = TAuthSysMenu.T_AUTH_SYS_MENU;
+    public static final T_AUTH_SYS_MENU T_AUTH_SYS_MENU = com.luzhiqing.bamboo.entity.tables.T_AUTH_SYS_MENU.T_AUTH_SYS_MENU;
 
     /**
      * 账户信息
      */
-    public static final TBambooUser T_BAMBOO_USER = TBambooUser.T_BAMBOO_USER;
+    public static final T_BAMBOO_USER T_BAMBOO_USER = com.luzhiqing.bamboo.entity.tables.T_BAMBOO_USER.T_BAMBOO_USER;
 
     /**
      * 员工信息(这里列了大概的信息，多的可以垂直拆表)
      */
-    public static final TStaff T_STAFF = TStaff.T_STAFF;
+    public static final T_STAFF T_STAFF = com.luzhiqing.bamboo.entity.tables.T_STAFF.T_STAFF;
 }

@@ -4,21 +4,12 @@
 package com.luzhiqing.bamboo.entity;
 
 
-import com.luzhiqing.bamboo.entity.tables.TAccountPlatform;
-import com.luzhiqing.bamboo.entity.tables.TAccountUser;
-import com.luzhiqing.bamboo.entity.tables.TAuthItem;
-import com.luzhiqing.bamboo.entity.tables.TAuthRole;
-import com.luzhiqing.bamboo.entity.tables.TAuthRoleStaffMapping;
-import com.luzhiqing.bamboo.entity.tables.TAuthSys;
-import com.luzhiqing.bamboo.entity.tables.TAuthSysMenu;
-import com.luzhiqing.bamboo.entity.tables.TBambooUser;
-import com.luzhiqing.bamboo.entity.tables.TStaff;
-
-import javax.annotation.Generated;
-
+import com.luzhiqing.bamboo.entity.tables.*;
 import org.jooq.Index;
 import org.jooq.OrderField;
 import org.jooq.impl.Internal;
+
+import javax.annotation.Generated;
 
 
 /**
@@ -67,28 +58,28 @@ public class Indexes {
     // -------------------------------------------------------------------------
 
     private static class Indexes0 {
-        public static Index T_ACCOUNT_PLATFORM_IDX_PLATFORM_ID = Internal.createIndex("idx_platform_id", TAccountPlatform.T_ACCOUNT_PLATFORM, new OrderField[] { TAccountPlatform.T_ACCOUNT_PLATFORM.PLATFORM_ID }, false);
-        public static Index T_ACCOUNT_PLATFORM_IDX_UID = Internal.createIndex("idx_uid", TAccountPlatform.T_ACCOUNT_PLATFORM, new OrderField[] { TAccountPlatform.T_ACCOUNT_PLATFORM.UID }, false);
-        public static Index T_ACCOUNT_PLATFORM_PRIMARY = Internal.createIndex("PRIMARY", TAccountPlatform.T_ACCOUNT_PLATFORM, new OrderField[] { TAccountPlatform.T_ACCOUNT_PLATFORM.ID }, true);
-        public static Index T_ACCOUNT_USER_IDX_EMAIL = Internal.createIndex("idx_email", TAccountUser.T_ACCOUNT_USER, new OrderField[] { TAccountUser.T_ACCOUNT_USER.EMAIL }, false);
-        public static Index T_ACCOUNT_USER_IDX_PHONE = Internal.createIndex("idx_phone", TAccountUser.T_ACCOUNT_USER, new OrderField[] { TAccountUser.T_ACCOUNT_USER.PHONE }, false);
-        public static Index T_ACCOUNT_USER_IDX_USER_NAME = Internal.createIndex("idx_user_name", TAccountUser.T_ACCOUNT_USER, new OrderField[] { TAccountUser.T_ACCOUNT_USER.USER_NAME }, false);
-        public static Index T_ACCOUNT_USER_PRIMARY = Internal.createIndex("PRIMARY", TAccountUser.T_ACCOUNT_USER, new OrderField[] { TAccountUser.T_ACCOUNT_USER.ID }, true);
-        public static Index T_AUTH_ITEM_IDX_SYS_MENU = Internal.createIndex("idx_sys_menu", TAuthItem.T_AUTH_ITEM, new OrderField[] { TAuthItem.T_AUTH_ITEM.SYS_ID, TAuthItem.T_AUTH_ITEM.MENU_ID }, false);
-        public static Index T_AUTH_ITEM_PRIMARY = Internal.createIndex("PRIMARY", TAuthItem.T_AUTH_ITEM, new OrderField[] { TAuthItem.T_AUTH_ITEM.ID }, true);
-        public static Index T_AUTH_ROLE_PRIMARY = Internal.createIndex("PRIMARY", TAuthRole.T_AUTH_ROLE, new OrderField[] { TAuthRole.T_AUTH_ROLE.ID }, true);
-        public static Index T_AUTH_ROLE_STAFF_MAPPING_IDX_STAFF_ID = Internal.createIndex("idx_staff_id", TAuthRoleStaffMapping.T_AUTH_ROLE_STAFF_MAPPING, new OrderField[] { TAuthRoleStaffMapping.T_AUTH_ROLE_STAFF_MAPPING.STAFF_ID }, false);
-        public static Index T_AUTH_ROLE_STAFF_MAPPING_PRIMARY = Internal.createIndex("PRIMARY", TAuthRoleStaffMapping.T_AUTH_ROLE_STAFF_MAPPING, new OrderField[] { TAuthRoleStaffMapping.T_AUTH_ROLE_STAFF_MAPPING.ID }, true);
-        public static Index T_AUTH_SYS_IDX_DOMAIN = Internal.createIndex("idx_domain", TAuthSys.T_AUTH_SYS, new OrderField[] { TAuthSys.T_AUTH_SYS.SYS_DOMAIN }, false);
-        public static Index T_AUTH_SYS_PRIMARY = Internal.createIndex("PRIMARY", TAuthSys.T_AUTH_SYS, new OrderField[] { TAuthSys.T_AUTH_SYS.ID }, true);
-        public static Index T_AUTH_SYS_MENU_IDX_PARENT_ID = Internal.createIndex("idx_parent_id", TAuthSysMenu.T_AUTH_SYS_MENU, new OrderField[] { TAuthSysMenu.T_AUTH_SYS_MENU.PARENT_ID }, false);
-        public static Index T_AUTH_SYS_MENU_IDX_SYS_ID = Internal.createIndex("idx_sys_id", TAuthSysMenu.T_AUTH_SYS_MENU, new OrderField[] { TAuthSysMenu.T_AUTH_SYS_MENU.SYS_ID }, false);
-        public static Index T_AUTH_SYS_MENU_PRIMARY = Internal.createIndex("PRIMARY", TAuthSysMenu.T_AUTH_SYS_MENU, new OrderField[] { TAuthSysMenu.T_AUTH_SYS_MENU.ID }, true);
-        public static Index T_BAMBOO_USER_IDX_UID = Internal.createIndex("idx_uid", TBambooUser.T_BAMBOO_USER, new OrderField[] { TBambooUser.T_BAMBOO_USER.UID }, false);
-        public static Index T_BAMBOO_USER_PRIMARY = Internal.createIndex("PRIMARY", TBambooUser.T_BAMBOO_USER, new OrderField[] { TBambooUser.T_BAMBOO_USER.ID }, true);
-        public static Index T_STAFF_IDX_EMAIL = Internal.createIndex("idx_email", TStaff.T_STAFF, new OrderField[] { TStaff.T_STAFF.EMAIL }, false);
-        public static Index T_STAFF_IDX_PHONE = Internal.createIndex("idx_phone", TStaff.T_STAFF, new OrderField[] { TStaff.T_STAFF.PHONE }, false);
-        public static Index T_STAFF_IDX_UID = Internal.createIndex("idx_uid", TStaff.T_STAFF, new OrderField[] { TStaff.T_STAFF.UID }, false);
-        public static Index T_STAFF_PRIMARY = Internal.createIndex("PRIMARY", TStaff.T_STAFF, new OrderField[] { TStaff.T_STAFF.ID }, true);
+        public static Index T_ACCOUNT_PLATFORM_IDX_PLATFORM_ID = Internal.createIndex("idx_platform_id", T_ACCOUNT_PLATFORM.T_ACCOUNT_PLATFORM, new OrderField[] { T_ACCOUNT_PLATFORM.T_ACCOUNT_PLATFORM.PLATFORM_ID }, false);
+        public static Index T_ACCOUNT_PLATFORM_IDX_UID = Internal.createIndex("idx_uid", T_ACCOUNT_PLATFORM.T_ACCOUNT_PLATFORM, new OrderField[] { T_ACCOUNT_PLATFORM.T_ACCOUNT_PLATFORM.UID }, false);
+        public static Index T_ACCOUNT_PLATFORM_PRIMARY = Internal.createIndex("PRIMARY", T_ACCOUNT_PLATFORM.T_ACCOUNT_PLATFORM, new OrderField[] { T_ACCOUNT_PLATFORM.T_ACCOUNT_PLATFORM.ID }, true);
+        public static Index T_ACCOUNT_USER_IDX_EMAIL = Internal.createIndex("idx_email", T_ACCOUNT_USER.T_ACCOUNT_USER, new OrderField[] { T_ACCOUNT_USER.T_ACCOUNT_USER.EMAIL }, false);
+        public static Index T_ACCOUNT_USER_IDX_PHONE = Internal.createIndex("idx_phone", T_ACCOUNT_USER.T_ACCOUNT_USER, new OrderField[] { T_ACCOUNT_USER.T_ACCOUNT_USER.PHONE }, false);
+        public static Index T_ACCOUNT_USER_IDX_USER_NAME = Internal.createIndex("idx_user_name", T_ACCOUNT_USER.T_ACCOUNT_USER, new OrderField[] { T_ACCOUNT_USER.T_ACCOUNT_USER.USER_NAME }, false);
+        public static Index T_ACCOUNT_USER_PRIMARY = Internal.createIndex("PRIMARY", T_ACCOUNT_USER.T_ACCOUNT_USER, new OrderField[] { T_ACCOUNT_USER.T_ACCOUNT_USER.ID }, true);
+        public static Index T_AUTH_ITEM_IDX_SYS_MENU = Internal.createIndex("idx_sys_menu", T_AUTH_ITEM.T_AUTH_ITEM, new OrderField[] { T_AUTH_ITEM.T_AUTH_ITEM.SYS_ID, T_AUTH_ITEM.T_AUTH_ITEM.MENU_ID }, false);
+        public static Index T_AUTH_ITEM_PRIMARY = Internal.createIndex("PRIMARY", T_AUTH_ITEM.T_AUTH_ITEM, new OrderField[] { T_AUTH_ITEM.T_AUTH_ITEM.ID }, true);
+        public static Index T_AUTH_ROLE_PRIMARY = Internal.createIndex("PRIMARY", T_AUTH_ROLE.T_AUTH_ROLE, new OrderField[] { T_AUTH_ROLE.T_AUTH_ROLE.ID }, true);
+        public static Index T_AUTH_ROLE_STAFF_MAPPING_IDX_STAFF_ID = Internal.createIndex("idx_staff_id", T_AUTH_ROLE_STAFF_MAPPING.T_AUTH_ROLE_STAFF_MAPPING, new OrderField[] { T_AUTH_ROLE_STAFF_MAPPING.T_AUTH_ROLE_STAFF_MAPPING.STAFF_ID }, false);
+        public static Index T_AUTH_ROLE_STAFF_MAPPING_PRIMARY = Internal.createIndex("PRIMARY", T_AUTH_ROLE_STAFF_MAPPING.T_AUTH_ROLE_STAFF_MAPPING, new OrderField[] { T_AUTH_ROLE_STAFF_MAPPING.T_AUTH_ROLE_STAFF_MAPPING.ID }, true);
+        public static Index T_AUTH_SYS_IDX_DOMAIN = Internal.createIndex("idx_domain", T_AUTH_SYS.T_AUTH_SYS, new OrderField[] { T_AUTH_SYS.T_AUTH_SYS.SYS_DOMAIN }, false);
+        public static Index T_AUTH_SYS_PRIMARY = Internal.createIndex("PRIMARY", T_AUTH_SYS.T_AUTH_SYS, new OrderField[] { T_AUTH_SYS.T_AUTH_SYS.ID }, true);
+        public static Index T_AUTH_SYS_MENU_IDX_PARENT_ID = Internal.createIndex("idx_parent_id", T_AUTH_SYS_MENU.T_AUTH_SYS_MENU, new OrderField[] { T_AUTH_SYS_MENU.T_AUTH_SYS_MENU.PARENT_ID }, false);
+        public static Index T_AUTH_SYS_MENU_IDX_SYS_ID = Internal.createIndex("idx_sys_id", T_AUTH_SYS_MENU.T_AUTH_SYS_MENU, new OrderField[] { T_AUTH_SYS_MENU.T_AUTH_SYS_MENU.SYS_ID }, false);
+        public static Index T_AUTH_SYS_MENU_PRIMARY = Internal.createIndex("PRIMARY", T_AUTH_SYS_MENU.T_AUTH_SYS_MENU, new OrderField[] { T_AUTH_SYS_MENU.T_AUTH_SYS_MENU.ID }, true);
+        public static Index T_BAMBOO_USER_IDX_UID = Internal.createIndex("idx_uid", T_BAMBOO_USER.T_BAMBOO_USER, new OrderField[] { T_BAMBOO_USER.T_BAMBOO_USER.UID }, false);
+        public static Index T_BAMBOO_USER_PRIMARY = Internal.createIndex("PRIMARY", T_BAMBOO_USER.T_BAMBOO_USER, new OrderField[] { T_BAMBOO_USER.T_BAMBOO_USER.ID }, true);
+        public static Index T_STAFF_IDX_EMAIL = Internal.createIndex("idx_email", T_STAFF.T_STAFF, new OrderField[] { T_STAFF.T_STAFF.EMAIL }, false);
+        public static Index T_STAFF_IDX_PHONE = Internal.createIndex("idx_phone", T_STAFF.T_STAFF, new OrderField[] { T_STAFF.T_STAFF.PHONE }, false);
+        public static Index T_STAFF_IDX_UID = Internal.createIndex("idx_uid", T_STAFF.T_STAFF, new OrderField[] { T_STAFF.T_STAFF.UID }, false);
+        public static Index T_STAFF_PRIMARY = Internal.createIndex("PRIMARY", T_STAFF.T_STAFF, new OrderField[] { T_STAFF.T_STAFF.ID }, true);
     }
 }

@@ -4,18 +4,16 @@
 package com.luzhiqing.bamboo.entity.tables.records;
 
 
-import com.luzhiqing.bamboo.entity.tables.TAuthRole;
-
-import java.time.LocalDateTime;
-
-import javax.annotation.Generated;
-
+import com.luzhiqing.bamboo.entity.tables.T_AUTH_ROLE;
 import org.jooq.Field;
 import org.jooq.Record1;
 import org.jooq.Record14;
 import org.jooq.Row14;
 import org.jooq.impl.UpdatableRecordImpl;
 import org.jooq.types.UInteger;
+
+import javax.annotation.Generated;
+import java.time.LocalDateTime;
 
 
 /**
@@ -31,7 +29,7 @@ import org.jooq.types.UInteger;
 @SuppressWarnings({ "all", "unchecked", "rawtypes" })
 public class TAuthRoleRecord extends UpdatableRecordImpl<TAuthRoleRecord> implements Record14<UInteger, String, String, String, LocalDateTime, Integer, String, LocalDateTime, Integer, String, LocalDateTime, Integer, String, Boolean> {
 
-    private static final long serialVersionUID = 1179616871;
+    private static final long serialVersionUID = -348782409;
 
     /**
      * Setter for <code>bamboo_auth.t_auth_role.id</code>. 自增id
@@ -266,7 +264,7 @@ public class TAuthRoleRecord extends UpdatableRecordImpl<TAuthRoleRecord> implem
      */
     @Override
     public Field<UInteger> field1() {
-        return TAuthRole.T_AUTH_ROLE.ID;
+        return T_AUTH_ROLE.T_AUTH_ROLE.ID;
     }
 
     /**
@@ -274,7 +272,7 @@ public class TAuthRoleRecord extends UpdatableRecordImpl<TAuthRoleRecord> implem
      */
     @Override
     public Field<String> field2() {
-        return TAuthRole.T_AUTH_ROLE.ROLE_NAME;
+        return T_AUTH_ROLE.T_AUTH_ROLE.ROLE_NAME;
     }
 
     /**
@@ -282,7 +280,7 @@ public class TAuthRoleRecord extends UpdatableRecordImpl<TAuthRoleRecord> implem
      */
     @Override
     public Field<String> field3() {
-        return TAuthRole.T_AUTH_ROLE.ROLE_DESC;
+        return T_AUTH_ROLE.T_AUTH_ROLE.ROLE_DESC;
     }
 
     /**
@@ -290,7 +288,7 @@ public class TAuthRoleRecord extends UpdatableRecordImpl<TAuthRoleRecord> implem
      */
     @Override
     public Field<String> field4() {
-        return TAuthRole.T_AUTH_ROLE.AUTH_ITEM_SET;
+        return T_AUTH_ROLE.T_AUTH_ROLE.AUTH_ITEM_SET;
     }
 
     /**
@@ -298,7 +296,7 @@ public class TAuthRoleRecord extends UpdatableRecordImpl<TAuthRoleRecord> implem
      */
     @Override
     public Field<LocalDateTime> field5() {
-        return TAuthRole.T_AUTH_ROLE.CREATE_TIME;
+        return T_AUTH_ROLE.T_AUTH_ROLE.CREATE_TIME;
     }
 
     /**
@@ -306,7 +304,7 @@ public class TAuthRoleRecord extends UpdatableRecordImpl<TAuthRoleRecord> implem
      */
     @Override
     public Field<Integer> field6() {
-        return TAuthRole.T_AUTH_ROLE.CREATE_USER;
+        return T_AUTH_ROLE.T_AUTH_ROLE.CREATE_USER;
     }
 
     /**
@@ -314,7 +312,7 @@ public class TAuthRoleRecord extends UpdatableRecordImpl<TAuthRoleRecord> implem
      */
     @Override
     public Field<String> field7() {
-        return TAuthRole.T_AUTH_ROLE.CREATE_USER_NAME;
+        return T_AUTH_ROLE.T_AUTH_ROLE.CREATE_USER_NAME;
     }
 
     /**
@@ -322,7 +320,7 @@ public class TAuthRoleRecord extends UpdatableRecordImpl<TAuthRoleRecord> implem
      */
     @Override
     public Field<LocalDateTime> field8() {
-        return TAuthRole.T_AUTH_ROLE.UPDATE_TIME;
+        return T_AUTH_ROLE.T_AUTH_ROLE.UPDATE_TIME;
     }
 
     /**
@@ -330,7 +328,7 @@ public class TAuthRoleRecord extends UpdatableRecordImpl<TAuthRoleRecord> implem
      */
     @Override
     public Field<Integer> field9() {
-        return TAuthRole.T_AUTH_ROLE.UPDATE_USER;
+        return T_AUTH_ROLE.T_AUTH_ROLE.UPDATE_USER;
     }
 
     /**
@@ -338,7 +336,7 @@ public class TAuthRoleRecord extends UpdatableRecordImpl<TAuthRoleRecord> implem
      */
     @Override
     public Field<String> field10() {
-        return TAuthRole.T_AUTH_ROLE.UPDATE_USER_NAME;
+        return T_AUTH_ROLE.T_AUTH_ROLE.UPDATE_USER_NAME;
     }
 
     /**
@@ -346,7 +344,7 @@ public class TAuthRoleRecord extends UpdatableRecordImpl<TAuthRoleRecord> implem
      */
     @Override
     public Field<LocalDateTime> field11() {
-        return TAuthRole.T_AUTH_ROLE.DELETE_TIME;
+        return T_AUTH_ROLE.T_AUTH_ROLE.DELETE_TIME;
     }
 
     /**
@@ -354,7 +352,7 @@ public class TAuthRoleRecord extends UpdatableRecordImpl<TAuthRoleRecord> implem
      */
     @Override
     public Field<Integer> field12() {
-        return TAuthRole.T_AUTH_ROLE.DELETE_USER;
+        return T_AUTH_ROLE.T_AUTH_ROLE.DELETE_USER;
     }
 
     /**
@@ -362,7 +360,7 @@ public class TAuthRoleRecord extends UpdatableRecordImpl<TAuthRoleRecord> implem
      */
     @Override
     public Field<String> field13() {
-        return TAuthRole.T_AUTH_ROLE.DELETE_USER_NAME;
+        return T_AUTH_ROLE.T_AUTH_ROLE.DELETE_USER_NAME;
     }
 
     /**
@@ -370,7 +368,7 @@ public class TAuthRoleRecord extends UpdatableRecordImpl<TAuthRoleRecord> implem
      */
     @Override
     public Field<Boolean> field14() {
-        return TAuthRole.T_AUTH_ROLE.ENABLED;
+        return T_AUTH_ROLE.T_AUTH_ROLE.ENABLED;
     }
 
     /**
@@ -753,14 +751,14 @@ public class TAuthRoleRecord extends UpdatableRecordImpl<TAuthRoleRecord> implem
      * Create a detached TAuthRoleRecord
      */
     public TAuthRoleRecord() {
-        super(TAuthRole.T_AUTH_ROLE);
+        super(T_AUTH_ROLE.T_AUTH_ROLE);
     }
 
     /**
      * Create a detached, initialised TAuthRoleRecord
      */
     public TAuthRoleRecord(UInteger id, String roleName, String roleDesc, String authItemSet, LocalDateTime createTime, Integer createUser, String createUserName, LocalDateTime updateTime, Integer updateUser, String updateUserName, LocalDateTime deleteTime, Integer deleteUser, String deleteUserName, Boolean enabled) {
-        super(TAuthRole.T_AUTH_ROLE);
+        super(T_AUTH_ROLE.T_AUTH_ROLE);
 
         set(0, id);
         set(1, roleName);

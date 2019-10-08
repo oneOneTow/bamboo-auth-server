@@ -5,12 +5,7 @@ package com.luzhiqing.bamboo.entity.tables.records;
 
 
 import com.luzhiqing.bamboo.constants.enums.GenderType;
-import com.luzhiqing.bamboo.entity.tables.TBambooUser;
-
-import java.time.LocalDateTime;
-
-import javax.annotation.Generated;
-
+import com.luzhiqing.bamboo.entity.tables.T_BAMBOO_USER;
 import org.jooq.Field;
 import org.jooq.Record1;
 import org.jooq.Record16;
@@ -18,6 +13,9 @@ import org.jooq.Row16;
 import org.jooq.impl.UpdatableRecordImpl;
 import org.jooq.types.UByte;
 import org.jooq.types.UInteger;
+
+import javax.annotation.Generated;
+import java.time.LocalDateTime;
 
 
 /**
@@ -33,7 +31,7 @@ import org.jooq.types.UInteger;
 @SuppressWarnings({ "all", "unchecked", "rawtypes" })
 public class TBambooUserRecord extends UpdatableRecordImpl<TBambooUserRecord> implements Record16<UInteger, UInteger, String, String, GenderType, UByte, LocalDateTime, Integer, String, LocalDateTime, Integer, String, LocalDateTime, Integer, String, Boolean> {
 
-    private static final long serialVersionUID = -1022234713;
+    private static final long serialVersionUID = 2011812575;
 
     /**
      * Setter for <code>bamboo_auth.t_bamboo_user.id</code>. 用户id
@@ -296,7 +294,7 @@ public class TBambooUserRecord extends UpdatableRecordImpl<TBambooUserRecord> im
      */
     @Override
     public Field<UInteger> field1() {
-        return TBambooUser.T_BAMBOO_USER.ID;
+        return T_BAMBOO_USER.T_BAMBOO_USER.ID;
     }
 
     /**
@@ -304,7 +302,7 @@ public class TBambooUserRecord extends UpdatableRecordImpl<TBambooUserRecord> im
      */
     @Override
     public Field<UInteger> field2() {
-        return TBambooUser.T_BAMBOO_USER.UID;
+        return T_BAMBOO_USER.T_BAMBOO_USER.UID;
     }
 
     /**
@@ -312,7 +310,7 @@ public class TBambooUserRecord extends UpdatableRecordImpl<TBambooUserRecord> im
      */
     @Override
     public Field<String> field3() {
-        return TBambooUser.T_BAMBOO_USER.NICKNAME;
+        return T_BAMBOO_USER.T_BAMBOO_USER.NICKNAME;
     }
 
     /**
@@ -320,7 +318,7 @@ public class TBambooUserRecord extends UpdatableRecordImpl<TBambooUserRecord> im
      */
     @Override
     public Field<String> field4() {
-        return TBambooUser.T_BAMBOO_USER.AVATAR;
+        return T_BAMBOO_USER.T_BAMBOO_USER.AVATAR;
     }
 
     /**
@@ -328,7 +326,7 @@ public class TBambooUserRecord extends UpdatableRecordImpl<TBambooUserRecord> im
      */
     @Override
     public Field<GenderType> field5() {
-        return TBambooUser.T_BAMBOO_USER.GENDER;
+        return T_BAMBOO_USER.T_BAMBOO_USER.GENDER;
     }
 
     /**
@@ -336,7 +334,7 @@ public class TBambooUserRecord extends UpdatableRecordImpl<TBambooUserRecord> im
      */
     @Override
     public Field<UByte> field6() {
-        return TBambooUser.T_BAMBOO_USER.USER_ROLE;
+        return T_BAMBOO_USER.T_BAMBOO_USER.USER_ROLE;
     }
 
     /**
@@ -344,7 +342,7 @@ public class TBambooUserRecord extends UpdatableRecordImpl<TBambooUserRecord> im
      */
     @Override
     public Field<LocalDateTime> field7() {
-        return TBambooUser.T_BAMBOO_USER.CREATE_TIME;
+        return T_BAMBOO_USER.T_BAMBOO_USER.CREATE_TIME;
     }
 
     /**
@@ -352,7 +350,7 @@ public class TBambooUserRecord extends UpdatableRecordImpl<TBambooUserRecord> im
      */
     @Override
     public Field<Integer> field8() {
-        return TBambooUser.T_BAMBOO_USER.CREATE_USER;
+        return T_BAMBOO_USER.T_BAMBOO_USER.CREATE_USER;
     }
 
     /**
@@ -360,7 +358,7 @@ public class TBambooUserRecord extends UpdatableRecordImpl<TBambooUserRecord> im
      */
     @Override
     public Field<String> field9() {
-        return TBambooUser.T_BAMBOO_USER.CREATE_USER_NAME;
+        return T_BAMBOO_USER.T_BAMBOO_USER.CREATE_USER_NAME;
     }
 
     /**
@@ -368,7 +366,7 @@ public class TBambooUserRecord extends UpdatableRecordImpl<TBambooUserRecord> im
      */
     @Override
     public Field<LocalDateTime> field10() {
-        return TBambooUser.T_BAMBOO_USER.UPDATE_TIME;
+        return T_BAMBOO_USER.T_BAMBOO_USER.UPDATE_TIME;
     }
 
     /**
@@ -376,7 +374,7 @@ public class TBambooUserRecord extends UpdatableRecordImpl<TBambooUserRecord> im
      */
     @Override
     public Field<Integer> field11() {
-        return TBambooUser.T_BAMBOO_USER.UPDATE_USER;
+        return T_BAMBOO_USER.T_BAMBOO_USER.UPDATE_USER;
     }
 
     /**
@@ -384,7 +382,7 @@ public class TBambooUserRecord extends UpdatableRecordImpl<TBambooUserRecord> im
      */
     @Override
     public Field<String> field12() {
-        return TBambooUser.T_BAMBOO_USER.UPDATE_USER_NAME;
+        return T_BAMBOO_USER.T_BAMBOO_USER.UPDATE_USER_NAME;
     }
 
     /**
@@ -392,7 +390,7 @@ public class TBambooUserRecord extends UpdatableRecordImpl<TBambooUserRecord> im
      */
     @Override
     public Field<LocalDateTime> field13() {
-        return TBambooUser.T_BAMBOO_USER.DELETE_TIME;
+        return T_BAMBOO_USER.T_BAMBOO_USER.DELETE_TIME;
     }
 
     /**
@@ -400,7 +398,7 @@ public class TBambooUserRecord extends UpdatableRecordImpl<TBambooUserRecord> im
      */
     @Override
     public Field<Integer> field14() {
-        return TBambooUser.T_BAMBOO_USER.DELETE_USER;
+        return T_BAMBOO_USER.T_BAMBOO_USER.DELETE_USER;
     }
 
     /**
@@ -408,7 +406,7 @@ public class TBambooUserRecord extends UpdatableRecordImpl<TBambooUserRecord> im
      */
     @Override
     public Field<String> field15() {
-        return TBambooUser.T_BAMBOO_USER.DELETE_USER_NAME;
+        return T_BAMBOO_USER.T_BAMBOO_USER.DELETE_USER_NAME;
     }
 
     /**
@@ -416,7 +414,7 @@ public class TBambooUserRecord extends UpdatableRecordImpl<TBambooUserRecord> im
      */
     @Override
     public Field<Boolean> field16() {
-        return TBambooUser.T_BAMBOO_USER.ENABLED;
+        return T_BAMBOO_USER.T_BAMBOO_USER.ENABLED;
     }
 
     /**
@@ -851,14 +849,14 @@ public class TBambooUserRecord extends UpdatableRecordImpl<TBambooUserRecord> im
      * Create a detached TBambooUserRecord
      */
     public TBambooUserRecord() {
-        super(TBambooUser.T_BAMBOO_USER);
+        super(T_BAMBOO_USER.T_BAMBOO_USER);
     }
 
     /**
      * Create a detached, initialised TBambooUserRecord
      */
     public TBambooUserRecord(UInteger id, UInteger uid, String nickname, String avatar, GenderType gender, UByte userRole, LocalDateTime createTime, Integer createUser, String createUserName, LocalDateTime updateTime, Integer updateUser, String updateUserName, LocalDateTime deleteTime, Integer deleteUser, String deleteUserName, Boolean enabled) {
-        super(TBambooUser.T_BAMBOO_USER);
+        super(T_BAMBOO_USER.T_BAMBOO_USER);
 
         set(0, id);
         set(1, uid);

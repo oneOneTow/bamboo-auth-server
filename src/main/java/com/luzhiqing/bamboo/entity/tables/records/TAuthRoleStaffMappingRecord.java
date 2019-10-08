@@ -4,18 +4,16 @@
 package com.luzhiqing.bamboo.entity.tables.records;
 
 
-import com.luzhiqing.bamboo.entity.tables.TAuthRoleStaffMapping;
-
-import java.time.LocalDateTime;
-
-import javax.annotation.Generated;
-
+import com.luzhiqing.bamboo.entity.tables.T_AUTH_ROLE_STAFF_MAPPING;
 import org.jooq.Field;
 import org.jooq.Record1;
 import org.jooq.Record13;
 import org.jooq.Row13;
 import org.jooq.impl.UpdatableRecordImpl;
 import org.jooq.types.UInteger;
+
+import javax.annotation.Generated;
+import java.time.LocalDateTime;
 
 
 /**
@@ -31,7 +29,7 @@ import org.jooq.types.UInteger;
 @SuppressWarnings({ "all", "unchecked", "rawtypes" })
 public class TAuthRoleStaffMappingRecord extends UpdatableRecordImpl<TAuthRoleStaffMappingRecord> implements Record13<UInteger, UInteger, String, LocalDateTime, Integer, String, LocalDateTime, Integer, String, LocalDateTime, Integer, String, Boolean> {
 
-    private static final long serialVersionUID = 99689601;
+    private static final long serialVersionUID = -835146111;
 
     /**
      * Setter for <code>bamboo_auth.t_auth_role_staff_mapping.id</code>. 自增id
@@ -252,7 +250,7 @@ public class TAuthRoleStaffMappingRecord extends UpdatableRecordImpl<TAuthRoleSt
      */
     @Override
     public Field<UInteger> field1() {
-        return TAuthRoleStaffMapping.T_AUTH_ROLE_STAFF_MAPPING.ID;
+        return T_AUTH_ROLE_STAFF_MAPPING.T_AUTH_ROLE_STAFF_MAPPING.ID;
     }
 
     /**
@@ -260,7 +258,7 @@ public class TAuthRoleStaffMappingRecord extends UpdatableRecordImpl<TAuthRoleSt
      */
     @Override
     public Field<UInteger> field2() {
-        return TAuthRoleStaffMapping.T_AUTH_ROLE_STAFF_MAPPING.STAFF_ID;
+        return T_AUTH_ROLE_STAFF_MAPPING.T_AUTH_ROLE_STAFF_MAPPING.STAFF_ID;
     }
 
     /**
@@ -268,7 +266,7 @@ public class TAuthRoleStaffMappingRecord extends UpdatableRecordImpl<TAuthRoleSt
      */
     @Override
     public Field<String> field3() {
-        return TAuthRoleStaffMapping.T_AUTH_ROLE_STAFF_MAPPING.ROLE_SET;
+        return T_AUTH_ROLE_STAFF_MAPPING.T_AUTH_ROLE_STAFF_MAPPING.ROLE_SET;
     }
 
     /**
@@ -276,7 +274,7 @@ public class TAuthRoleStaffMappingRecord extends UpdatableRecordImpl<TAuthRoleSt
      */
     @Override
     public Field<LocalDateTime> field4() {
-        return TAuthRoleStaffMapping.T_AUTH_ROLE_STAFF_MAPPING.CREATE_TIME;
+        return T_AUTH_ROLE_STAFF_MAPPING.T_AUTH_ROLE_STAFF_MAPPING.CREATE_TIME;
     }
 
     /**
@@ -284,7 +282,7 @@ public class TAuthRoleStaffMappingRecord extends UpdatableRecordImpl<TAuthRoleSt
      */
     @Override
     public Field<Integer> field5() {
-        return TAuthRoleStaffMapping.T_AUTH_ROLE_STAFF_MAPPING.CREATE_USER;
+        return T_AUTH_ROLE_STAFF_MAPPING.T_AUTH_ROLE_STAFF_MAPPING.CREATE_USER;
     }
 
     /**
@@ -292,7 +290,7 @@ public class TAuthRoleStaffMappingRecord extends UpdatableRecordImpl<TAuthRoleSt
      */
     @Override
     public Field<String> field6() {
-        return TAuthRoleStaffMapping.T_AUTH_ROLE_STAFF_MAPPING.CREATE_USER_NAME;
+        return T_AUTH_ROLE_STAFF_MAPPING.T_AUTH_ROLE_STAFF_MAPPING.CREATE_USER_NAME;
     }
 
     /**
@@ -300,7 +298,7 @@ public class TAuthRoleStaffMappingRecord extends UpdatableRecordImpl<TAuthRoleSt
      */
     @Override
     public Field<LocalDateTime> field7() {
-        return TAuthRoleStaffMapping.T_AUTH_ROLE_STAFF_MAPPING.UPDATE_TIME;
+        return T_AUTH_ROLE_STAFF_MAPPING.T_AUTH_ROLE_STAFF_MAPPING.UPDATE_TIME;
     }
 
     /**
@@ -308,7 +306,7 @@ public class TAuthRoleStaffMappingRecord extends UpdatableRecordImpl<TAuthRoleSt
      */
     @Override
     public Field<Integer> field8() {
-        return TAuthRoleStaffMapping.T_AUTH_ROLE_STAFF_MAPPING.UPDATE_USER;
+        return T_AUTH_ROLE_STAFF_MAPPING.T_AUTH_ROLE_STAFF_MAPPING.UPDATE_USER;
     }
 
     /**
@@ -316,7 +314,7 @@ public class TAuthRoleStaffMappingRecord extends UpdatableRecordImpl<TAuthRoleSt
      */
     @Override
     public Field<String> field9() {
-        return TAuthRoleStaffMapping.T_AUTH_ROLE_STAFF_MAPPING.UPDATE_USER_NAME;
+        return T_AUTH_ROLE_STAFF_MAPPING.T_AUTH_ROLE_STAFF_MAPPING.UPDATE_USER_NAME;
     }
 
     /**
@@ -324,7 +322,7 @@ public class TAuthRoleStaffMappingRecord extends UpdatableRecordImpl<TAuthRoleSt
      */
     @Override
     public Field<LocalDateTime> field10() {
-        return TAuthRoleStaffMapping.T_AUTH_ROLE_STAFF_MAPPING.DELETE_TIME;
+        return T_AUTH_ROLE_STAFF_MAPPING.T_AUTH_ROLE_STAFF_MAPPING.DELETE_TIME;
     }
 
     /**
@@ -332,7 +330,7 @@ public class TAuthRoleStaffMappingRecord extends UpdatableRecordImpl<TAuthRoleSt
      */
     @Override
     public Field<Integer> field11() {
-        return TAuthRoleStaffMapping.T_AUTH_ROLE_STAFF_MAPPING.DELETE_USER;
+        return T_AUTH_ROLE_STAFF_MAPPING.T_AUTH_ROLE_STAFF_MAPPING.DELETE_USER;
     }
 
     /**
@@ -340,7 +338,7 @@ public class TAuthRoleStaffMappingRecord extends UpdatableRecordImpl<TAuthRoleSt
      */
     @Override
     public Field<String> field12() {
-        return TAuthRoleStaffMapping.T_AUTH_ROLE_STAFF_MAPPING.DELETE_USER_NAME;
+        return T_AUTH_ROLE_STAFF_MAPPING.T_AUTH_ROLE_STAFF_MAPPING.DELETE_USER_NAME;
     }
 
     /**
@@ -348,7 +346,7 @@ public class TAuthRoleStaffMappingRecord extends UpdatableRecordImpl<TAuthRoleSt
      */
     @Override
     public Field<Boolean> field13() {
-        return TAuthRoleStaffMapping.T_AUTH_ROLE_STAFF_MAPPING.ENABLED;
+        return T_AUTH_ROLE_STAFF_MAPPING.T_AUTH_ROLE_STAFF_MAPPING.ENABLED;
     }
 
     /**
@@ -705,14 +703,14 @@ public class TAuthRoleStaffMappingRecord extends UpdatableRecordImpl<TAuthRoleSt
      * Create a detached TAuthRoleStaffMappingRecord
      */
     public TAuthRoleStaffMappingRecord() {
-        super(TAuthRoleStaffMapping.T_AUTH_ROLE_STAFF_MAPPING);
+        super(T_AUTH_ROLE_STAFF_MAPPING.T_AUTH_ROLE_STAFF_MAPPING);
     }
 
     /**
      * Create a detached, initialised TAuthRoleStaffMappingRecord
      */
     public TAuthRoleStaffMappingRecord(UInteger id, UInteger staffId, String roleSet, LocalDateTime createTime, Integer createUser, String createUserName, LocalDateTime updateTime, Integer updateUser, String updateUserName, LocalDateTime deleteTime, Integer deleteUser, String deleteUserName, Boolean enabled) {
-        super(TAuthRoleStaffMapping.T_AUTH_ROLE_STAFF_MAPPING);
+        super(T_AUTH_ROLE_STAFF_MAPPING.T_AUTH_ROLE_STAFF_MAPPING);
 
         set(0, id);
         set(1, staffId);

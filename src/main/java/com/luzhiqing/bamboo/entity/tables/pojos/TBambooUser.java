@@ -5,14 +5,12 @@ package com.luzhiqing.bamboo.entity.tables.pojos;
 
 
 import com.luzhiqing.bamboo.constants.enums.GenderType;
-
-import java.io.Serializable;
-import java.time.LocalDateTime;
-
-import javax.annotation.Generated;
-
 import org.jooq.types.UByte;
 import org.jooq.types.UInteger;
+
+import javax.annotation.Generated;
+import java.io.Serializable;
+import java.time.LocalDateTime;
 
 
 /**

@@ -4,12 +4,7 @@
 package com.luzhiqing.bamboo.entity.tables.records;
 
 
-import com.luzhiqing.bamboo.entity.tables.TAuthSysMenu;
-
-import java.time.LocalDateTime;
-
-import javax.annotation.Generated;
-
+import com.luzhiqing.bamboo.entity.tables.T_AUTH_SYS_MENU;
 import org.jooq.Field;
 import org.jooq.Record1;
 import org.jooq.Record17;
@@ -17,6 +12,9 @@ import org.jooq.Row17;
 import org.jooq.impl.UpdatableRecordImpl;
 import org.jooq.types.UInteger;
 import org.jooq.types.UShort;
+
+import javax.annotation.Generated;
+import java.time.LocalDateTime;
 
 
 /**
@@ -32,7 +30,7 @@ import org.jooq.types.UShort;
 @SuppressWarnings({ "all", "unchecked", "rawtypes" })
 public class TAuthSysMenuRecord extends UpdatableRecordImpl<TAuthSysMenuRecord> implements Record17<UInteger, UShort, UInteger, String, String, String, Byte, LocalDateTime, Integer, String, LocalDateTime, Integer, String, LocalDateTime, Integer, String, Boolean> {
 
-    private static final long serialVersionUID = -304855179;
+    private static final long serialVersionUID = -1156478523;
 
     /**
      * Setter for <code>bamboo_auth.t_auth_sys_menu.id</code>. 自增id
@@ -309,7 +307,7 @@ public class TAuthSysMenuRecord extends UpdatableRecordImpl<TAuthSysMenuRecord> 
      */
     @Override
     public Field<UInteger> field1() {
-        return TAuthSysMenu.T_AUTH_SYS_MENU.ID;
+        return T_AUTH_SYS_MENU.T_AUTH_SYS_MENU.ID;
     }
 
     /**
@@ -317,7 +315,7 @@ public class TAuthSysMenuRecord extends UpdatableRecordImpl<TAuthSysMenuRecord> 
      */
     @Override
     public Field<UShort> field2() {
-        return TAuthSysMenu.T_AUTH_SYS_MENU.SYS_ID;
+        return T_AUTH_SYS_MENU.T_AUTH_SYS_MENU.SYS_ID;
     }
 
     /**
@@ -325,7 +323,7 @@ public class TAuthSysMenuRecord extends UpdatableRecordImpl<TAuthSysMenuRecord> 
      */
     @Override
     public Field<UInteger> field3() {
-        return TAuthSysMenu.T_AUTH_SYS_MENU.PARENT_ID;
+        return T_AUTH_SYS_MENU.T_AUTH_SYS_MENU.PARENT_ID;
     }
 
     /**
@@ -333,7 +331,7 @@ public class TAuthSysMenuRecord extends UpdatableRecordImpl<TAuthSysMenuRecord> 
      */
     @Override
     public Field<String> field4() {
-        return TAuthSysMenu.T_AUTH_SYS_MENU.MENU_NAME;
+        return T_AUTH_SYS_MENU.T_AUTH_SYS_MENU.MENU_NAME;
     }
 
     /**
@@ -341,7 +339,7 @@ public class TAuthSysMenuRecord extends UpdatableRecordImpl<TAuthSysMenuRecord> 
      */
     @Override
     public Field<String> field5() {
-        return TAuthSysMenu.T_AUTH_SYS_MENU.MENU_DESC;
+        return T_AUTH_SYS_MENU.T_AUTH_SYS_MENU.MENU_DESC;
     }
 
     /**
@@ -349,7 +347,7 @@ public class TAuthSysMenuRecord extends UpdatableRecordImpl<TAuthSysMenuRecord> 
      */
     @Override
     public Field<String> field6() {
-        return TAuthSysMenu.T_AUTH_SYS_MENU.MENU_URI;
+        return T_AUTH_SYS_MENU.T_AUTH_SYS_MENU.MENU_URI;
     }
 
     /**
@@ -357,7 +355,7 @@ public class TAuthSysMenuRecord extends UpdatableRecordImpl<TAuthSysMenuRecord> 
      */
     @Override
     public Field<Byte> field7() {
-        return TAuthSysMenu.T_AUTH_SYS_MENU.SHOWING;
+        return T_AUTH_SYS_MENU.T_AUTH_SYS_MENU.SHOWING;
     }
 
     /**
@@ -365,7 +363,7 @@ public class TAuthSysMenuRecord extends UpdatableRecordImpl<TAuthSysMenuRecord> 
      */
     @Override
     public Field<LocalDateTime> field8() {
-        return TAuthSysMenu.T_AUTH_SYS_MENU.CREATE_TIME;
+        return T_AUTH_SYS_MENU.T_AUTH_SYS_MENU.CREATE_TIME;
     }
 
     /**
@@ -373,7 +371,7 @@ public class TAuthSysMenuRecord extends UpdatableRecordImpl<TAuthSysMenuRecord> 
      */
     @Override
     public Field<Integer> field9() {
-        return TAuthSysMenu.T_AUTH_SYS_MENU.CREATE_USER;
+        return T_AUTH_SYS_MENU.T_AUTH_SYS_MENU.CREATE_USER;
     }
 
     /**
@@ -381,7 +379,7 @@ public class TAuthSysMenuRecord extends UpdatableRecordImpl<TAuthSysMenuRecord> 
      */
     @Override
     public Field<String> field10() {
-        return TAuthSysMenu.T_AUTH_SYS_MENU.CREATE_USER_NAME;
+        return T_AUTH_SYS_MENU.T_AUTH_SYS_MENU.CREATE_USER_NAME;
     }
 
     /**
@@ -389,7 +387,7 @@ public class TAuthSysMenuRecord extends UpdatableRecordImpl<TAuthSysMenuRecord> 
      */
     @Override
     public Field<LocalDateTime> field11() {
-        return TAuthSysMenu.T_AUTH_SYS_MENU.UPDATE_TIME;
+        return T_AUTH_SYS_MENU.T_AUTH_SYS_MENU.UPDATE_TIME;
     }
 
     /**
@@ -397,7 +395,7 @@ public class TAuthSysMenuRecord extends UpdatableRecordImpl<TAuthSysMenuRecord> 
      */
     @Override
     public Field<Integer> field12() {
-        return TAuthSysMenu.T_AUTH_SYS_MENU.UPDATE_USER;
+        return T_AUTH_SYS_MENU.T_AUTH_SYS_MENU.UPDATE_USER;
     }
 
     /**
@@ -405,7 +403,7 @@ public class TAuthSysMenuRecord extends UpdatableRecordImpl<TAuthSysMenuRecord> 
      */
     @Override
     public Field<String> field13() {
-        return TAuthSysMenu.T_AUTH_SYS_MENU.UPDATE_USER_NAME;
+        return T_AUTH_SYS_MENU.T_AUTH_SYS_MENU.UPDATE_USER_NAME;
     }
 
     /**
@@ -413,7 +411,7 @@ public class TAuthSysMenuRecord extends UpdatableRecordImpl<TAuthSysMenuRecord> 
      */
     @Override
     public Field<LocalDateTime> field14() {
-        return TAuthSysMenu.T_AUTH_SYS_MENU.DELETE_TIME;
+        return T_AUTH_SYS_MENU.T_AUTH_SYS_MENU.DELETE_TIME;
     }
 
     /**
@@ -421,7 +419,7 @@ public class TAuthSysMenuRecord extends UpdatableRecordImpl<TAuthSysMenuRecord> 
      */
     @Override
     public Field<Integer> field15() {
-        return TAuthSysMenu.T_AUTH_SYS_MENU.DELETE_USER;
+        return T_AUTH_SYS_MENU.T_AUTH_SYS_MENU.DELETE_USER;
     }
 
     /**
@@ -429,7 +427,7 @@ public class TAuthSysMenuRecord extends UpdatableRecordImpl<TAuthSysMenuRecord> 
      */
     @Override
     public Field<String> field16() {
-        return TAuthSysMenu.T_AUTH_SYS_MENU.DELETE_USER_NAME;
+        return T_AUTH_SYS_MENU.T_AUTH_SYS_MENU.DELETE_USER_NAME;
     }
 
     /**
@@ -437,7 +435,7 @@ public class TAuthSysMenuRecord extends UpdatableRecordImpl<TAuthSysMenuRecord> 
      */
     @Override
     public Field<Boolean> field17() {
-        return TAuthSysMenu.T_AUTH_SYS_MENU.ENABLED;
+        return T_AUTH_SYS_MENU.T_AUTH_SYS_MENU.ENABLED;
     }
 
     /**
@@ -898,14 +896,14 @@ public class TAuthSysMenuRecord extends UpdatableRecordImpl<TAuthSysMenuRecord> 
      * Create a detached TAuthSysMenuRecord
      */
     public TAuthSysMenuRecord() {
-        super(TAuthSysMenu.T_AUTH_SYS_MENU);
+        super(T_AUTH_SYS_MENU.T_AUTH_SYS_MENU);
     }
 
     /**
      * Create a detached, initialised TAuthSysMenuRecord
      */
     public TAuthSysMenuRecord(UInteger id, UShort sysId, UInteger parentId, String menuName, String menuDesc, String menuUri, Byte showing, LocalDateTime createTime, Integer createUser, String createUserName, LocalDateTime updateTime, Integer updateUser, String updateUserName, LocalDateTime deleteTime, Integer deleteUser, String deleteUserName, Boolean enabled) {
-        super(TAuthSysMenu.T_AUTH_SYS_MENU);
+        super(T_AUTH_SYS_MENU.T_AUTH_SYS_MENU);
 
         set(0, id);
         set(1, sysId);
