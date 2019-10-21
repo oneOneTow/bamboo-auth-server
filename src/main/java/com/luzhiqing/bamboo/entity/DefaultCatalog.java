@@ -36,7 +36,7 @@ public class DefaultCatalog extends CatalogImpl {
     /**
      * The schema <code>bamboo_auth</code>.
      */
-    public final BambooAuth BAMBOO_AUTH = com.luzhiqing.bamboo.entity.BambooAuth.BAMBOO_AUTH;
+    public final BambooAuth BAMBOO_AUTH = BambooAuth.BAMBOO_AUTH;
 
     /**
      * No further instances allowed

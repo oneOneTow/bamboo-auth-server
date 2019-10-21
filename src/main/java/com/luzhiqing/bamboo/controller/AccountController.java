@@ -1,6 +1,7 @@
 package com.luzhiqing.bamboo.controller;
 
 import com.luzhiqing.bamboo.remote.dto.LoginDTO;
+import com.luzhiqing.bamboo.remote.dto.LoginResponseDTO;
 import com.luzhiqing.bamboo.remote.dto.RegisterDTO;
 import com.luzhiqing.bamboo.remote.dto.TokenDTO;
 import com.luzhiqing.bamboo.service.AccountServie;
@@ -36,7 +37,8 @@ public class AccountController {
      * @param loginDTO
      * @return TokenDTO
      */
-    public TokenDTO login(LoginDTO loginDTO) {
-        return null;
+    @RequestMapping(value = "/auth/account/login",method = RequestMethod.POST)
+    public LoginResponseDTO login(LoginDTO loginDTO) {
+        return accountServie.;
     }
 }
