@@ -7,6 +7,7 @@ import com.luzhiqing.bamboo.remote.dto.LoginDTO;
 import com.luzhiqing.bamboo.remote.dto.LoginResponseDTO;
 import com.luzhiqing.bamboo.remote.dto.RegisterDTO;
 import com.luzhiqing.bamboo.remote.dto.TokenDTO;
+import com.luzhiqing.bamboo.remote.dto.WxLoginDTO;
 import com.luzhiqing.bamboo.service.AccountServie;
 import com.luzhiqing.common.util.StringUtils;
 import me.chanjar.weixin.common.error.WxErrorException;
@@ -14,10 +15,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.util.Assert;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 /**
  * @Description:
@@ -48,19 +46,9 @@ public class AccountController {
      * @param loginDTO
      * @return TokenDTO
      */
-    @RequestMapping(value = "/auth/account/login/{appid}")
-    public TokenDTO wxLogin(@PathVariable String appid, String code) {
-        StringUtils.isBlank(code, "code is blank!");
-        WxMaService wxMaService = WxMaServiceFactory.getWxMaService(appid);
-        Assert.isNull(wxMaService, "根据appid:" + appid + "找不到对应的服务");
-        try {
-            WxMaJscode2SessionResult session = wxMaService.getUserService().getSessionInfo(code);
-            logger.info(appid+"sessionkey:{},openId:{}",session.getSessionKey(),session.getOpenid());
-        } catch (WxErrorException e) {
-            e.printStackTrace();
-        }
-
-        return null;
+    @RequestMapping(value = "/auth/account/login/{appId}")
+    public WxLoginDTO wxLogin(@PathVariable String appId, @RequestParam String code) {
+        return accountServie.wxLogin(appId,code);
     }
 
     /**

@@ -4,6 +4,7 @@ create TABLE t_account_platform (
   uid                           int(11) unsigned      NOT NULL DEFAULT '0'   COMMENT '账号id',
   platform_id                   varchar(60)           NOT NULL DEFAULT ''    COMMENT '平台id',
   platform_token                varchar(60)           NOT NULL DEFAULT ''    COMMENT '平台access_token',
+  session_key                   varchar(60)           NOT NULL DEFAULT ''    COMMENT '平台session_key',
   account_type                  int(1)                NOT NULL DEFAULT '0'   COMMENT '平台类型 0:未知,1:wechat,2:qq',
   nickname                      varchar(60)           NOT NULL DEFAULT ''    COMMENT '昵称',
   avatar                        varchar(255)          NOT NULL DEFAULT ''    COMMENT '头像',

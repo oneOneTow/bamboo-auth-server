@@ -31,6 +31,7 @@ public class TAccountPlatform implements Serializable {
     private UInteger      uid;
     private String        platformId;
     private String        platformToken;
+    private String        sessionKey;
     private AccountType   accountType;
     private String        nickname;
     private String        avatar;
@@ -239,6 +240,14 @@ public class TAccountPlatform implements Serializable {
 
     public void setEnabled(Boolean enabled) {
         this.enabled = enabled;
+    }
+
+    public String getSessionKey() {
+        return sessionKey;
+    }
+
+    public void setSessionKey(String sessionKey) {
+        this.sessionKey = sessionKey;
     }
 
     @Override
