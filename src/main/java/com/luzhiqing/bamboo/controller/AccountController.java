@@ -1,20 +1,11 @@
 package com.luzhiqing.bamboo.controller;
 
-import cn.binarywang.wx.miniapp.api.WxMaService;
-import cn.binarywang.wx.miniapp.bean.WxMaJscode2SessionResult;
-import com.luzhiqing.bamboo.config.WxMaServiceFactory;
-import com.luzhiqing.bamboo.remote.dto.LoginDTO;
-import com.luzhiqing.bamboo.remote.dto.LoginResponseDTO;
 import com.luzhiqing.bamboo.remote.dto.RegisterDTO;
 import com.luzhiqing.bamboo.remote.dto.TokenDTO;
-import com.luzhiqing.bamboo.remote.dto.WxLoginDTO;
 import com.luzhiqing.bamboo.service.AccountServie;
-import com.luzhiqing.common.util.StringUtils;
-import me.chanjar.weixin.common.error.WxErrorException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.util.Assert;
 import org.springframework.web.bind.annotation.*;
 
 /**
@@ -43,23 +34,12 @@ public class AccountController {
     /**
      * 用户登录
      *
-     * @param loginDTO
-     * @return TokenDTO
-     */
-    @RequestMapping(value = "/auth/account/login/{appId}")
-    public WxLoginDTO wxLogin(@PathVariable String appId, @RequestParam String code) {
-        return accountServie.wxLogin(appId,code);
-    }
-
-    /**
-     * 用户登录
      *
-     * @param loginDTO
      * @return TokenDTO
      */
-    @RequestMapping(value = "/auth/account/login",method = RequestMethod.POST)
-    public LoginResponseDTO login(LoginDTO loginDTO) {
-        return accountServie.;
+    @RequestMapping(value = "/auth/account/login/{appId}",method = RequestMethod.GET)
+    public TokenDTO mpLogin(@PathVariable String appId, @RequestParam String code) {
+        return accountServie.mpLogin(appId,code);
     }
 
 
