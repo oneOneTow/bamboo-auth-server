@@ -13,11 +13,25 @@ public class TAccountPlatformDaoImpl extends
         implements TAccountPlatformDao {
     @Override
     protected T_ACCOUNT_PLATFORM getTable() {
-        return null;
+        return T_ACCOUNT_PLATFORM.T_ACCOUNT_PLATFORM;
     }
 
     @Override
     protected Class<TAccountPlatform> getClazz() {
-        return null;
+        return TAccountPlatform.class;
+    }
+
+    @Override
+    public TAccountPlatform selectByOpenId(String openId) {
+        return dsl.selectFrom(table)
+                .where(table.PLATFORM_ID.eq(openId))
+                .fetchOneInto(TAccountPlatform.class);
+    }
+
+    @Override
+    public TAccountPlatform selectByUid(String uid) {
+        return dsl.selectFrom(table)
+                .where(table.PLATFORM_ID.eq(uid))
+                .fetchOneInto(TAccountPlatform.class);
     }
 }
